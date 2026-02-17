@@ -31,11 +31,10 @@ export default function ServicePageTemplate({
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-black text-white py-16 md:py-24">
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/90 to-black/70" />
+      <section className="relative bg-black text-white py-10 md:py-20">
         <div className="container-custom relative z-10">
-          <nav className="mb-6" aria-label="Breadcrumb">
-            <ol className="flex items-center space-x-2 text-sm text-gray-400">
+          <nav className="mb-4" aria-label="Breadcrumb">
+            <ol className="flex items-center space-x-2 text-xs md:text-sm text-gray-400">
               <li><Link href="/" className="hover:text-white">Home</Link></li>
               <li><span>/</span></li>
               <li><Link href="/services" className="hover:text-white">Services</Link></li>
@@ -44,20 +43,17 @@ export default function ServicePageTemplate({
             </ol>
           </nav>
           <div className="max-w-3xl">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">
-              {title} in London & South East
+            <h1 className="text-2xl md:text-4xl font-bold mb-3">
+              {title}
             </h1>
-            <p className="text-xl text-gray-300 mb-8">
+            <p className="text-base md:text-xl text-gray-300 mb-4 md:mb-6">
               {heroDescription}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a href="tel:+447476058050" className="btn-primary py-4 px-6">
-                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                </svg>
-                Call 24/7: +44 7476 058050
+            <div className="flex flex-col sm:flex-row gap-3">
+              <a href="tel:+447476058050" className="bg-[#FF8C00] text-white py-3 px-6 rounded font-semibold hover:bg-[#E67E00] transition-colors text-center">
+                Call 24/7
               </a>
-              <Link href="/contact" className="btn-secondary bg-white text-black border-white hover:bg-transparent hover:text-white">
+              <Link href="/contact" className="bg-white text-black py-3 px-6 rounded font-semibold hover:bg-gray-100 transition-colors text-center">
                 Get Quote
               </Link>
             </div>
@@ -65,47 +61,43 @@ export default function ServicePageTemplate({
         </div>
       </section>
 
-      {/* Service Overview */}
-      <section className="section-padding bg-white">
+      {/* Overview */}
+      <section className="py-8 md:py-16 bg-white">
         <div className="container-custom">
           <div className="max-w-4xl">
-            <h2 className="text-2xl md:text-3xl font-bold text-black mb-6">Overview</h2>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              {description}
-            </p>
+            <h2 className="text-xl md:text-3xl font-bold text-black mb-4">Overview</h2>
+            <p className="text-sm md:text-base text-gray-700">{description}</p>
           </div>
         </div>
       </section>
 
       {/* Key Benefits */}
-      <section className="section-padding bg-[#F5F5F5]">
+      <section className="py-8 md:py-16 bg-[#F5F5F5]">
         <div className="container-custom">
-          <h2 className="text-2xl md:text-3xl font-bold text-black mb-8">Key Benefits</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <h2 className="text-xl md:text-3xl font-bold text-black mb-6">Key Benefits</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
             {benefits.map((benefit, index) => (
-              <div key={index} className="bg-white rounded-lg p-6 flex items-start">
-                <div className="flex-shrink-0 w-10 h-10 bg-[#FF8C00] rounded-full flex items-center justify-center mr-4">
-                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-                <p className="text-gray-700 font-medium">{benefit}</p>
+              <div key={index} className="bg-white rounded-lg p-4 flex items-start">
+                <svg className="w-5 h-5 text-[#FF8C00] mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <p className="text-gray-700 text-sm md:text-base">{benefit}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* When You Need This Service */}
-      <section className="section-padding bg-white">
+      {/* When You Need This */}
+      <section className="py-8 md:py-16 bg-white">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-12">
             <div>
-              <h2 className="text-2xl md:text-3xl font-bold text-black mb-6">When You Need This Service</h2>
-              <ul className="space-y-4">
+              <h2 className="text-xl md:text-3xl font-bold text-black mb-4">When You Need This</h2>
+              <ul className="space-y-2">
                 {whenYouNeed.map((scenario, index) => (
-                  <li key={index} className="flex items-start">
-                    <svg className="w-6 h-6 text-[#FF8C00] mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <li key={index} className="flex items-start text-sm md:text-base">
+                    <svg className="w-4 h-4 text-[#FF8C00] mr-2 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     <span className="text-gray-700">{scenario}</span>
@@ -113,13 +105,11 @@ export default function ServicePageTemplate({
                 ))}
               </ul>
             </div>
-            <div className="bg-black text-white rounded-lg p-8">
-              <h3 className="text-xl font-bold mb-4">Need Immediate Security?</h3>
-              <p className="text-gray-300 mb-6">
-                Our team is available 24/7 for emergency security deployment. Contact us now for rapid response.
-              </p>
-              <a href="tel:+447476058050" className="btn-primary w-full justify-center">
-                Call Now: +44 7476 058050
+            <div className="bg-black text-white rounded-lg p-4 md:p-6">
+              <h3 className="font-bold mb-2">Need Immediate Security?</h3>
+              <p className="text-gray-300 text-sm mb-4">24/7 emergency deployment available.</p>
+              <a href="tel:+447476058050" className="bg-[#FF8C00] text-white py-3 px-6 rounded font-semibold hover:bg-[#E67E00] transition-colors block text-center">
+                Call Now
               </a>
             </div>
           </div>
@@ -127,40 +117,31 @@ export default function ServicePageTemplate({
       </section>
 
       {/* Our Approach */}
-      <section className="section-padding bg-[#F5F5F5]">
+      <section className="py-8 md:py-16 bg-[#F5F5F5]">
         <div className="container-custom">
-          <h2 className="text-2xl md:text-3xl font-bold text-black mb-8">Our Approach</h2>
-          <div className="space-y-6">
+          <h2 className="text-xl md:text-3xl font-bold text-black mb-4">Our Approach</h2>
+          <div className="space-y-3 max-w-4xl">
             {approach.map((paragraph, index) => (
-              <p key={index} className="text-lg text-gray-700 leading-relaxed">
-                {paragraph}
-              </p>
+              <p key={index} className="text-sm md:text-base text-gray-700">{paragraph}</p>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Pricing Guidance */}
+      {/* Pricing */}
       {pricingFrom && (
-        <section className="section-padding bg-white">
+        <section className="py-8 md:py-16 bg-white">
           <div className="container-custom">
-            <div className="bg-black text-white rounded-lg p-8 md:p-12">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div className="bg-black text-white rounded-lg p-6 md:p-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
                 <div>
-                  <h2 className="text-2xl md:text-3xl font-bold mb-4">Pricing</h2>
-                  <p className="text-4xl font-bold text-[#FF8C00] mb-2">{pricingFrom}</p>
-                  <p className="text-gray-400 mb-6">Custom quotes based on your specific requirements</p>
-                  <h3 className="font-semibold mb-3">What affects pricing:</h3>
-                  <ul className="space-y-2 text-gray-300">
-                    <li>• Number of guards required</li>
-                    <li>• Duration and frequency of service</li>
-                    <li>• Location and site complexity</li>
-                    <li>• Specific security requirements</li>
-                  </ul>
+                  <h2 className="text-xl md:text-2xl font-bold mb-2">Pricing</h2>
+                  <p className="text-2xl md:text-3xl font-bold text-[#FF8C00] mb-2">{pricingFrom}</p>
+                  <p className="text-gray-400 text-sm">Custom quotes based on your requirements</p>
                 </div>
-                <div className="text-center">
-                  <Link href="/contact" className="btn-primary text-xl py-5 px-8 w-full md:w-auto">
-                    Request a Detailed Quote
+                <div className="text-center md:text-right">
+                  <Link href="/contact" className="bg-[#FF8C00] text-white py-3 px-6 rounded font-semibold hover:bg-[#E67E00] transition-colors inline-block">
+                    Get Quote
                   </Link>
                 </div>
               </div>
@@ -169,20 +150,20 @@ export default function ServicePageTemplate({
         </section>
       )}
 
-      {/* FAQ Section */}
-      <section className="section-padding bg-[#F5F5F5]">
+      {/* FAQ */}
+      <section className="py-8 md:py-16 bg-[#F5F5F5]">
         <div className="container-custom">
-          <h2 className="text-2xl md:text-3xl font-bold text-black mb-8">Frequently Asked Questions</h2>
-          <div className="space-y-4 max-w-3xl">
+          <h2 className="text-xl md:text-3xl font-bold text-black mb-6">FAQ</h2>
+          <div className="space-y-3 max-w-3xl">
             {faqs.map((faq, index) => (
-              <details key={index} className="bg-white rounded-lg p-6 group">
-                <summary className="font-semibold text-black cursor-pointer flex items-center justify-between">
+              <details key={index} className="bg-white rounded-lg p-4 group">
+                <summary className="font-medium text-black cursor-pointer flex items-center justify-between text-sm md:text-base">
                   {faq.question}
-                  <svg className="w-5 h-5 text-[#FF8C00] transform group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 text-[#FF8C00] transform group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
-                <p className="mt-4 text-gray-700">{faq.answer}</p>
+                <p className="mt-3 text-gray-700 text-sm">{faq.answer}</p>
               </details>
             ))}
           </div>
@@ -190,20 +171,20 @@ export default function ServicePageTemplate({
       </section>
 
       {/* Related Services */}
-      <section className="section-padding bg-white">
+      <section className="py-8 md:py-16 bg-white">
         <div className="container-custom">
-          <h2 className="text-2xl md:text-3xl font-bold text-black mb-8">Related Services</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <h2 className="text-xl md:text-3xl font-bold text-black mb-6">Related Services</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6">
             {relatedServices.map((service) => (
               <Link
                 key={service.name}
                 href={service.href}
-                className="bg-[#F5F5F5] rounded-lg p-6 hover:shadow-lg transition-shadow group"
+                className="bg-[#F5F5F5] rounded-lg p-4 hover:shadow-lg transition-shadow group"
               >
-                <h3 className="font-semibold text-black mb-2 group-hover:text-[#FF8C00] transition-colors">
+                <h3 className="font-semibold text-black text-sm md:text-base group-hover:text-[#FF8C00]">
                   {service.name}
                 </h3>
-                <span className="text-[#FF8C00] text-sm font-medium">Learn More →</span>
+                <span className="text-[#FF8C00] text-xs md:text-sm">Learn More →</span>
               </Link>
             ))}
           </div>
@@ -211,17 +192,15 @@ export default function ServicePageTemplate({
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 bg-black text-white">
+      <section className="py-10 md:py-16 bg-black text-white">
         <div className="container-custom text-center">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">Ready to discuss your {title.toLowerCase()} needs?</h2>
-          <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-            Contact us today for a free consultation and no-obligation quote.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:+447476058050" className="btn-primary py-4 px-8">
-              Call 24/7: +44 7476 058050
+          <h2 className="text-xl md:text-3xl font-bold mb-3">Ready to discuss your needs?</h2>
+          <p className="text-sm md:text-base text-gray-300 mb-6">Free consultation and no-obligation quote.</p>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <a href="tel:+447476058050" className="bg-[#FF8C00] text-white py-3 px-6 rounded font-semibold hover:bg-[#E67E00] transition-colors">
+              Call Now
             </a>
-            <Link href="/contact" className="btn-secondary bg-white text-black border-white hover:bg-transparent hover:text-white">
+            <Link href="/contact" className="bg-white text-black py-3 px-6 rounded font-semibold hover:bg-gray-100 transition-colors">
               Get a Quote
             </Link>
           </div>
