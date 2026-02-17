@@ -3,34 +3,8 @@
 import Link from 'next/link';
 import { useState } from 'react';
 
-const services = [
-  { name: 'Property Security', href: '/services', items: [
-    { name: 'Key Holding & Alarm Response', href: '/services/key-holding-alarm-response' },
-    { name: 'Mobile Patrols', href: '/services/mobile-patrols' },
-    { name: 'Vacant Property Security', href: '/services/vacant-property-security' },
-  ]},
-  { name: 'Business Security', href: '/services', items: [
-    { name: 'Corporate Security', href: '/services/corporate-security' },
-    { name: 'Retail Security', href: '/services/retail-security' },
-    { name: 'Construction Site Security', href: '/services/construction-site-security' },
-    { name: 'Hotel Security', href: '/services/hotel-security' },
-    { name: 'Industrial Security', href: '/services/industrial-security' },
-  ]},
-  { name: 'Event Security', href: '/services', items: [
-    { name: 'Event Security', href: '/services/event-security' },
-    { name: 'Door Supervisors', href: '/services/door-supervisors' },
-    { name: 'Film TV & Theatre Security', href: '/services/film-tv-theatre-security' },
-    { name: 'Traffic Marshals', href: '/services/traffic-marshals' },
-  ]},
-  { name: 'Personal Protection', href: '/services', items: [
-    { name: 'Close Protection Security', href: '/services/close-protection-security' },
-    { name: 'Concierge Security', href: '/services/concierge-security' },
-  ]},
-];
-
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
@@ -47,57 +21,9 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
-            {/* Services Dropdown */}
-            <div className="relative">
-              <button
-                onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
-                onMouseEnter={() => setServicesDropdownOpen(true)}
-                className="flex items-center text-gray-700 hover:text-black font-medium"
-              >
-                Services
-                <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-
-              {servicesDropdownOpen && (
-                <div
-                  className="absolute top-full left-0 mt-2 w-[600px] bg-white rounded-lg shadow-xl border p-6"
-                  onMouseLeave={() => setServicesDropdownOpen(false)}
-                >
-                  <div className="grid grid-cols-2 gap-6">
-                    {services.map((category) => (
-                      <div key={category.name}>
-                        <h3 className="font-semibold text-black mb-2">{category.name}</h3>
-                        <ul className="space-y-1">
-                          {category.items.map((item) => (
-                            <li key={item.name}>
-                              <Link
-                                href={item.href}
-                                className="text-gray-600 hover:text-[#FF8C00] text-sm block py-1"
-                                onClick={() => setServicesDropdownOpen(false)}
-                              >
-                                {item.name}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    ))}
-                  </div>
-                  <div className="mt-4 pt-4 border-t">
-                    <Link
-                      href="/services"
-                      className="text-[#FF8C00] font-medium hover:underline"
-                      onClick={() => setServicesDropdownOpen(false)}
-                    >
-                      View All Services →
-                    </Link>
-                  </div>
-                </div>
-              )}
-            </div>
-
+            <Link href="/services" className="text-gray-700 hover:text-black font-medium">
+              Services
+            </Link>
             <Link href="/about" className="text-gray-700 hover:text-black font-medium">
               About Us
             </Link>
@@ -157,42 +83,31 @@ export default function Header() {
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="lg:hidden py-4 border-t">
-            <div className="space-y-4">
-              {services.map((category) => (
-                <div key={category.name} className="border-b pb-4">
-                  <h3 className="font-semibold text-black mb-2">{category.name}</h3>
-                  <ul className="space-y-2 pl-4">
-                    {category.items.map((item) => (
-                      <li key={item.name}>
-                        <Link
-                          href={item.href}
-                          className="text-gray-600 hover:text-[#FF8C00] text-sm block"
-                          onClick={() => setMobileMenuOpen(false)}
-                        >
-                          {item.name}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
+            <div className="space-y-2">
+              <Link
+                href="/services"
+                className="block text-gray-700 hover:text-[#FF8C00] font-medium py-3 border-b"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Services
+              </Link>
               <Link
                 href="/about"
-                className="block text-gray-700 hover:text-black font-medium py-2"
+                className="block text-gray-700 hover:text-[#FF8C00] font-medium py-3 border-b"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 About Us
               </Link>
               <Link
                 href="/coverage-areas"
-                className="block text-gray-700 hover:text-black font-medium py-2"
+                className="block text-gray-700 hover:text-[#FF8C00] font-medium py-3 border-b"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Coverage Areas
               </Link>
               <Link
                 href="/contact"
-                className="block text-gray-700 hover:text-black font-medium py-2"
+                className="block text-gray-700 hover:text-[#FF8C00] font-medium py-3 border-b"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Contact
@@ -200,13 +115,13 @@ export default function Header() {
               <div className="pt-4 space-y-3">
                 <a
                   href="tel:+447476058050"
-                  className="btn-primary w-full text-center"
+                  className="block w-full text-center bg-[#FF8C00] text-white py-4 rounded font-semibold"
                 >
                   Call 24/7: +44 7476 058050
                 </a>
                 <Link
                   href="/contact"
-                  className="btn-secondary w-full text-center"
+                  className="block w-full text-center border-2 border-black text-black py-4 rounded font-semibold hover:bg-black hover:text-white transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Get Quote
