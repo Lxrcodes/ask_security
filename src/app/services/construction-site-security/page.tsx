@@ -10,7 +10,7 @@ export default function ConstructionSiteSecurityPage() {
   return (
     <ServicePageTemplate
       title="Construction Site Security"
-      heroDescription="Comprehensive security solutions for construction sites of all sizes. Protect valuable equipment, materials, and your project from theft, vandalism, and unauthorized access across London and South East England."
+      heroDescription="Comprehensive security solutions for construction sites of all sizes. Protect valuable equipment, materials, and your project from theft, vandalism, and unauthorized access across Hertfordshire, Bedfordshire, North London, and Central London."
       description="Construction sites are high-value targets for thieves, with equipment, materials, and metals worth significant sums left on-site. Our construction site security service provides robust protection for your project, from initial groundworks through to completion. SIA-licensed guards control access, conduct patrols, and provide 24/7 monitoring to prevent theft, vandalism, and trespass, keeping your project on schedule and on budget."
       benefits={[
         'Prevent theft of equipment and materials',
@@ -32,7 +32,6 @@ export default function ConstructionSiteSecurityPage() {
         'Regular internal and perimeter patrols are conducted throughout each shift, with particular attention to high-value equipment and material storage areas. Guards are vigilant for signs of attempted theft or trespass.',
         'We provide detailed daily reports on site activity, incidents, and observations. Our team works closely with site managers to adapt security measures as the project progresses and site conditions change.',
       ]}
-      pricingFrom="From £14 per hour"
       faqs={[
         {
           question: 'Can you provide security for sites of any size?',

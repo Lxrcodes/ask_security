@@ -10,7 +10,7 @@ export default function CorporateSecurityPage() {
   return (
     <ServicePageTemplate
       title="Corporate Security"
-      heroDescription="Professional security solutions for corporate offices, business headquarters, and commercial premises across London and South East England. Protect your people, assets, and reputation."
+      heroDescription="Professional security solutions for corporate offices, business headquarters, and commercial premises across Hertfordshire, Bedfordshire, North London, and Central London. Protect your people, assets, and reputation."
       description="Our corporate security service provides comprehensive protection for businesses of all sizes. From front-of-house reception security to comprehensive access control and emergency response, our SIA-licensed guards deliver professional security that enhances your corporate image while keeping your premises, employees, and visitors safe. We understand that corporate security requires discretion, professionalism, and exceptional customer service skills."
       benefits={[
         'Professional, well-presented security officers',
@@ -32,7 +32,6 @@ export default function CorporateSecurityPage() {
         'Beyond visible security presence, our guards monitor CCTV systems, conduct regular patrols, and are trained to respond to a variety of situations from medical emergencies to security threats. They work seamlessly with your existing staff and procedures.',
         'We provide regular security reports and recommendations for improving your corporate security posture. Our team can also assist with developing emergency procedures and conducting security awareness training for your staff.',
       ]}
-      pricingFrom="From £16 per hour"
       faqs={[
         {
           question: 'What qualifications do your corporate security officers have?',
@@ -57,7 +56,7 @@ export default function CorporateSecurityPage() {
       ]}
       relatedServices={[
         { name: 'Concierge Security', href: '/services/concierge-security' },
-        { name: 'Retail Security', href: '/services/retail-security' },
+        { name: 'Hotel Security', href: '/services/hotel-security' },
         { name: 'Close Protection Security', href: '/services/close-protection-security' },
       ]}
     />

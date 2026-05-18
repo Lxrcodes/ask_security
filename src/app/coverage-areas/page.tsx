@@ -3,22 +3,26 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Coverage Areas',
-  description: 'ASK Security provides professional security services across London & South East England. Covering all London boroughs, Surrey, Kent, Essex & Hertfordshire.',
+  description: 'ASK Security provides professional security services across Hertfordshire, Bedfordshire, North London, and Central London.',
 };
 
-const londonAreas = [
-  { region: 'Central London', areas: ['City of London', 'Westminster', 'Kensington & Chelsea', 'Camden', 'Islington'] },
-  { region: 'North London', areas: ['Barnet', 'Enfield', 'Haringey', 'Waltham Forest'] },
-  { region: 'South London', areas: ['Southwark', 'Lambeth', 'Lewisham', 'Greenwich', 'Bromley', 'Croydon'] },
-  { region: 'East London', areas: ['Tower Hamlets', 'Hackney', 'Newham', 'Barking & Dagenham', 'Redbridge'] },
-  { region: 'West London', areas: ['Hammersmith & Fulham', 'Brent', 'Ealing', 'Hounslow', 'Hillingdon'] },
-];
-
-const southEastAreas = [
-  { county: 'Surrey', areas: ['Guildford', 'Woking', 'Epsom', 'Reigate', 'Staines'] },
-  { county: 'Kent', areas: ['Dartford', 'Sevenoaks', 'Maidstone', 'Rochester'] },
-  { county: 'Essex', areas: ['Romford', 'Brentwood', 'Chelmsford', 'Basildon'] },
-  { county: 'Hertfordshire', areas: ['Watford', 'St Albans', 'Hemel Hempstead', 'Stevenage'] },
+const coverageAreas = [
+  {
+    region: 'Central London',
+    areas: ['City of London', 'Westminster', 'Kensington & Chelsea', 'Camden', 'Islington'],
+  },
+  {
+    region: 'North London',
+    areas: ['Harrow', 'Enfield', 'Finchley', 'Northwood', 'Barnet'],
+  },
+  {
+    region: 'Hertfordshire',
+    areas: ['Watford', 'St Albans', 'Hemel Hempstead', 'Stevenage'],
+  },
+  {
+    region: 'Bedfordshire',
+    areas: ['Bedford', 'Luton', 'Dunstable', 'Leighton Buzzard'],
+  },
 ];
 
 export default function CoverageAreasPage() {
@@ -37,42 +41,23 @@ export default function CoverageAreasPage() {
           <div className="max-w-3xl">
             <h1 className="text-2xl md:text-4xl font-bold mb-3">Our Coverage Areas</h1>
             <p className="text-base md:text-xl text-gray-300">
-              Professional security services across London and South East England.
+              Professional security services across Hertfordshire, Bedfordshire, North London, and Central London.
             </p>
           </div>
         </div>
       </section>
 
-      {/* London Coverage */}
+      {/* Coverage Areas */}
       <section className="py-8 md:py-16 bg-white">
         <div className="container-custom">
-          <h2 className="text-xl md:text-3xl font-bold text-black mb-6">London Boroughs</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-6">
-            {londonAreas.map((region) => (
-              <div key={region.region} className="bg-[#F5F5F5] rounded-lg p-3 md:p-4">
-                <h3 className="font-bold text-black mb-2 text-sm md:text-base">{region.region}</h3>
-                <ul className="space-y-1">
-                  {region.areas.map((area) => (
-                    <li key={area} className="text-gray-700 text-xs md:text-sm">{area}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* South East Coverage */}
-      <section className="py-8 md:py-16 bg-[#F5F5F5]">
-        <div className="container-custom">
-          <h2 className="text-xl md:text-3xl font-bold text-black mb-6">South East England</h2>
+          <h2 className="text-xl md:text-3xl font-bold text-black mb-6">Areas We Cover</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6">
-            {southEastAreas.map((county) => (
-              <div key={county.county} className="bg-white rounded-lg p-3 md:p-4">
-                <h3 className="font-bold text-black mb-2 text-sm md:text-base">{county.county}</h3>
+            {coverageAreas.map((area) => (
+              <div key={area.region} className="bg-[#F5F5F5] rounded-lg p-3 md:p-4">
+                <h3 className="font-bold text-black mb-2 text-sm md:text-base">{area.region}</h3>
                 <ul className="space-y-1">
-                  {county.areas.map((area) => (
-                    <li key={area} className="text-gray-700 text-xs md:text-sm">{area}</li>
+                  {area.areas.map((place) => (
+                    <li key={place} className="text-gray-700 text-xs md:text-sm">{place}</li>
                   ))}
                 </ul>
               </div>
@@ -82,7 +67,7 @@ export default function CoverageAreasPage() {
       </section>
 
       {/* Response Times */}
-      <section className="py-8 md:py-16 bg-white">
+      <section className="py-8 md:py-16 bg-[#F5F5F5]">
         <div className="container-custom">
           <h2 className="text-xl md:text-3xl font-bold text-black mb-6 text-center">Response Times</h2>
           <div className="grid grid-cols-3 gap-3 md:gap-6 max-w-3xl mx-auto">
@@ -94,12 +79,12 @@ export default function CoverageAreasPage() {
             <div className="bg-black text-white rounded-lg p-3 md:p-6 text-center">
               <div className="text-xl md:text-4xl font-bold text-[#FF8C00] mb-1">20-30</div>
               <div className="text-xs text-gray-400">min</div>
-              <div className="font-medium text-xs md:text-sm mt-1">Greater London</div>
+              <div className="font-medium text-xs md:text-sm mt-1">North London</div>
             </div>
             <div className="bg-black text-white rounded-lg p-3 md:p-6 text-center">
               <div className="text-xl md:text-4xl font-bold text-[#FF8C00] mb-1">30-45</div>
               <div className="text-xs text-gray-400">min</div>
-              <div className="font-medium text-xs md:text-sm mt-1">South East</div>
+              <div className="font-medium text-xs md:text-sm mt-1">Herts &amp; Beds</div>
             </div>
           </div>
         </div>

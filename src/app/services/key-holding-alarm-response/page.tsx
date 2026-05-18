@@ -10,7 +10,7 @@ export default function KeyHoldingAlarmResponsePage() {
   return (
     <ServicePageTemplate
       title="Key Holding & Alarm Response"
-      heroDescription="Professional 24/7 key holding and rapid alarm response services for commercial and residential properties across London and South East England."
+      heroDescription="Professional 24/7 key holding and rapid alarm response services for commercial and residential properties across Hertfordshire, Bedfordshire, North London, and Central London."
       description="Our key holding and alarm response service provides peace of mind for property owners and managers. When your alarm is triggered, our SIA-licensed security guards respond immediately, investigating the cause and taking appropriate action. We hold your keys securely, eliminating the need for you or your staff to respond to out-of-hours incidents. Our service is fully compliant with BS7984, the British Standard for key holding and response services."
       benefits={[
         'BS7984 compliant key holding service',
@@ -32,7 +32,6 @@ export default function KeyHoldingAlarmResponsePage() {
         'When an alarm is triggered, our control room is notified immediately. A security guard is dispatched to your property within our guaranteed response time, typically within 20 minutes for London locations.',
         'Our guards conduct a thorough inspection of the property, checking for signs of intrusion, damage, or other issues. A detailed report is provided after each response, including photographs where appropriate.',
       ]}
-      pricingFrom="From £15 per alarm response"
       faqs={[
         {
           question: 'What is the typical response time for alarm activations?',

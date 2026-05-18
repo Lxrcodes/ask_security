@@ -5,7 +5,7 @@ const services = [
   { name: 'Mobile Patrols', href: '/services/mobile-patrols' },
   { name: 'Vacant Property Security', href: '/services/vacant-property-security' },
   { name: 'Corporate Security', href: '/services/corporate-security' },
-  { name: 'Retail Security', href: '/services/retail-security' },
+  { name: 'Residential Security', href: '/services/residential-security' },
   { name: 'Event Security', href: '/services/event-security' },
   { name: 'Close Protection', href: '/services/close-protection-security' },
 ];
@@ -21,11 +21,8 @@ const company = [
 const serviceAreas = [
   'Central London',
   'North London',
-  'South London',
-  'East London',
-  'West London',
-  'Greater London',
-  'South East England',
+  'Hertfordshire',
+  'Bedfordshire',
 ];
 
 export default function Footer() {
@@ -40,7 +37,7 @@ export default function Footer() {
               <span className="text-2xl font-bold text-[#FF8C00] ml-1">Security</span>
             </div>
             <p className="text-gray-400 mb-4">
-              Professional 24/7 security guard services across London and South East England.
+              Professional 24/7 security guard services across Hertfordshire, Bedfordshire, North London, and Central London.
               SIA-licensed, fully insured, and trusted by businesses since 2004.
             </p>
             <div className="flex space-x-4">

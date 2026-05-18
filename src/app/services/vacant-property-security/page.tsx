@@ -10,7 +10,7 @@ export default function VacantPropertySecurityPage() {
   return (
     <ServicePageTemplate
       title="Vacant Property Security"
-      heroDescription="Comprehensive security solutions for vacant, unoccupied, and empty properties. Protect your investment from squatters, vandals, and thieves across London and South East England."
+      heroDescription="Comprehensive security solutions for vacant, unoccupied, and empty properties. Protect your investment from squatters, vandals, and thieves across Hertfordshire, Bedfordshire, North London, and Central London."
       description="Vacant properties are prime targets for squatters, vandals, metal thieves, and arsonists. Our vacant property security service provides the protection your empty building needs. Whether you have a property awaiting sale, undergoing renovation, or between tenants, we offer tailored security solutions including static guards, mobile patrols, and remote monitoring to safeguard your investment and maintain its value."
       benefits={[
         'Prevent squatter occupation and illegal entry',
@@ -32,7 +32,6 @@ export default function VacantPropertySecurityPage() {
         'Guards conduct thorough internal and external patrols, checking for signs of attempted entry, damage, or unauthorized occupation. All utilities and secure areas are monitored to prevent theft and vandalism.',
         'We work closely with property owners and managers, providing regular reports and immediate notification of any incidents. Our team can also liaise with contractors and authorized visitors, maintaining a log of all property access.',
       ]}
-      pricingFrom="From £14 per hour"
       faqs={[
         {
           question: 'How quickly can you secure a vacant property?',

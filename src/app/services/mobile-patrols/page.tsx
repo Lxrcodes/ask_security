@@ -10,7 +10,7 @@ export default function MobilePatrolsPage() {
   return (
     <ServicePageTemplate
       title="Mobile Patrols"
-      heroDescription="Regular mobile security patrols to deter crime, detect issues early, and provide visible security presence across your properties in London and South East England."
+      heroDescription="Regular mobile security patrols to deter crime, detect issues early, and provide visible security presence across your properties in Hertfordshire, Bedfordshire, North London, and Central London."
       description="Our mobile patrol service provides cost-effective security coverage for single or multiple sites. SIA-licensed security officers conduct regular patrols in marked vehicles, checking your premises at scheduled or random intervals. This visible security presence acts as a powerful deterrent while ensuring any issues are identified and addressed promptly. Mobile patrols are ideal for businesses that need flexible security coverage without the cost of static guards."
       benefits={[
         'Cost-effective alternative to static guards',
@@ -32,7 +32,6 @@ export default function MobilePatrolsPage() {
         'During each patrol, officers conduct thorough external checks of your premises, looking for signs of attempted break-ins, vandalism, or other security concerns. Internal patrols can be arranged if key access is provided.',
         'All patrols are GPS-tracked, providing verifiable proof of service and ensuring complete accountability. You can request reports showing exact patrol routes and timings.',
       ]}
-      pricingFrom="From £12 per patrol visit"
       faqs={[
         {
           question: 'How often will my property be patrolled?',

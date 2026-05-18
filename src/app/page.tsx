@@ -2,10 +2,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const services = [
-  { title: 'Property', description: 'Key Holding, Patrols, Vacant Property', href: '/services' },
-  { title: 'Business', description: 'Corporate, Retail, Construction', href: '/services' },
-  { title: 'Events', description: 'Events, Door Staff, Film & TV', href: '/services' },
-  { title: 'Personal', description: 'Close Protection, Concierge', href: '/services' },
+  { title: 'Property', description: 'Key Holding, Patrols, Residential', href: '/services' },
+  { title: 'Business', description: 'Corporate, Construction, Hotel', href: '/services' },
+  { title: 'Events', description: 'Events, Film & TV, Traffic', href: '/services' },
+  { title: 'Personal', description: 'Close Protection, Concierge, Investigation', href: '/services' },
 ];
 
 const certifications = [

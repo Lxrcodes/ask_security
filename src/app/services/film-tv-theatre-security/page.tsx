@@ -32,7 +32,6 @@ export default function FilmTVTheatreSecurityPage() {
         'Unit base security ensures vehicles, equipment, and trailers are protected during breaks and overnight. Our guards manage access, verify credentials, and maintain vigilance for theft or intrusion.',
         'For high-profile productions, we provide enhanced security including talent protection, anti-paparazzi measures, and coordination with personal security teams. We understand the need for discretion in protecting celebrity talent.',
       ]}
-      pricingFrom="From £18 per hour"
       faqs={[
         {
           question: 'Do your guards understand how productions work?',

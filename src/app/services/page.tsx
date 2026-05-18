@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Security Services',
-  description: 'Comprehensive security guard services in London & South East. Property security, business security, event security, and personal protection from SIA-licensed professionals.',
+  description: 'Comprehensive security guard services across Hertfordshire, Bedfordshire, North London, and Central London. Property, business, event, and personal protection from SIA-licensed professionals.',
 };
 
 const serviceCategories = [
@@ -26,6 +26,11 @@ const serviceCategories = [
         description: 'Comprehensive protection for unoccupied properties and buildings.',
         href: '/services/vacant-property-security',
       },
+      {
+        name: 'Residential Security',
+        description: 'Professional security for homes, estates, and gated communities.',
+        href: '/services/residential-security',
+      },
     ],
   },
   {
@@ -36,11 +41,6 @@ const serviceCategories = [
         name: 'Corporate Security',
         description: 'Tailored security for offices, headquarters, and corporate environments.',
         href: '/services/corporate-security',
-      },
-      {
-        name: 'Retail Security',
-        description: 'Loss prevention and customer safety for retail establishments.',
-        href: '/services/retail-security',
       },
       {
         name: 'Construction Site Security',
@@ -69,11 +69,6 @@ const serviceCategories = [
         href: '/services/event-security',
       },
       {
-        name: 'Door Supervisors',
-        description: 'Professional door supervision for venues and establishments.',
-        href: '/services/door-supervisors',
-      },
-      {
         name: 'Film TV & Theatre Security',
         description: 'Specialist security for film sets, TV productions, and theatres.',
         href: '/services/film-tv-theatre-security',
@@ -98,6 +93,11 @@ const serviceCategories = [
         name: 'Concierge Security',
         description: 'Front-of-house security with exceptional customer service.',
         href: '/services/concierge-security',
+      },
+      {
+        name: 'Private Investigation',
+        description: 'Discreet, lawful investigation services for individuals and businesses.',
+        href: '/services/private-investigation',
       },
     ],
   },

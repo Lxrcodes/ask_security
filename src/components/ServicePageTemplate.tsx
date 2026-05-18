@@ -129,26 +129,24 @@ export default function ServicePageTemplate({
       </section>
 
       {/* Pricing */}
-      {pricingFrom && (
-        <section className="py-8 md:py-16 bg-white">
-          <div className="container-custom">
-            <div className="bg-black text-white rounded-lg p-6 md:p-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-                <div>
-                  <h2 className="text-xl md:text-2xl font-bold mb-2">Pricing</h2>
-                  <p className="text-2xl md:text-3xl font-bold text-[#FF8C00] mb-2">{pricingFrom}</p>
-                  <p className="text-gray-400 text-sm">Custom quotes based on your requirements</p>
-                </div>
-                <div className="text-center md:text-right">
-                  <Link href="/contact" className="bg-[#FF8C00] text-white py-3 px-6 rounded font-semibold hover:bg-[#E67E00] transition-colors inline-block">
-                    Get Quote
-                  </Link>
-                </div>
+      <section className="py-8 md:py-16 bg-white">
+        <div className="container-custom">
+          <div className="bg-black text-white rounded-lg p-6 md:p-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+              <div>
+                <h2 className="text-xl md:text-2xl font-bold mb-2">Pricing</h2>
+                <p className="text-2xl md:text-3xl font-bold text-[#FF8C00] mb-2">Competitive Pricing</p>
+                <p className="text-gray-400 text-sm">Tailored quotes based on your specific requirements</p>
+              </div>
+              <div className="text-center md:text-right">
+                <Link href="/contact" className="bg-[#FF8C00] text-white py-3 px-6 rounded font-semibold hover:bg-[#E67E00] transition-colors inline-block">
+                  Get Quote
+                </Link>
               </div>
             </div>
           </div>
-        </section>
-      )}
+        </div>
+      </section>
 
       {/* FAQ */}
       <section className="py-8 md:py-16 bg-[#F5F5F5]">

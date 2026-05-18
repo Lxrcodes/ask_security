@@ -32,7 +32,6 @@ export default function CloseProtectionSecurityPage() {
         'Protection may include advance reconnaissance of venues, secure transportation, residential security, and personal accompaniment. Our officers maintain constant situational awareness while remaining discreet and professional.',
         'We adapt protection levels to match threat assessments and client requirements. Whether you need a single CPO for everyday activities or a full protection team for high-risk situations, we scale our service accordingly.',
       ]}
-      pricingFrom="From £350 per day"
       faqs={[
         {
           question: 'What qualifications do your close protection officers have?',

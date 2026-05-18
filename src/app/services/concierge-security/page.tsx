@@ -32,7 +32,6 @@ export default function ConciergeSecurityPage() {
         'Security remains paramount despite the customer service focus. Officers are trained to recognize security threats, manage access control systems, and respond to incidents while maintaining a calm, professional demeanor.',
         'We provide regular service reports and work closely with building managers to ensure our service meets your evolving requirements. Officers can be briefed on VIP residents, expected visitors, and special procedures.',
       ]}
-      pricingFrom="From £17 per hour"
       faqs={[
         {
           question: 'How is concierge security different from regular security?',

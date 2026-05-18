@@ -32,7 +32,6 @@ export default function HotelSecurityPage() {
         'Our team is trained to handle the full range of hotel security situations, from managing difficult guests and handling lost property to responding to medical emergencies and security incidents. They act as an extension of your team.',
         'We provide regular security reports and recommendations for improving hotel security. Our officers can also support conference and event security, VIP arrivals, and special occasions.',
       ]}
-      pricingFrom="From £16 per hour"
       faqs={[
         {
           question: 'How do you maintain guest experience while providing security?',

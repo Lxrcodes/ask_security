@@ -32,7 +32,6 @@ export default function TrafficMarshalsPage() {
         'For construction sites, our banksmen manage vehicle reversing, loading, and unloading operations. They coordinate with drivers and site personnel to prevent accidents and maintain efficient site operations.',
         'At events, our marshals manage car parks, direct attendees, and support emergency vehicle access. We can also provide temporary signage and coordinate with local traffic management where required.',
       ]}
-      pricingFrom="From £15 per hour"
       faqs={[
         {
           question: 'What qualifications do your traffic marshals have?',

@@ -10,7 +10,7 @@ export default function EventSecurityPage() {
   return (
     <ServicePageTemplate
       title="Event Security"
-      heroDescription="Comprehensive event security services for gatherings of all sizes. From corporate functions to music festivals, our SIA-licensed guards ensure your event runs safely and smoothly across London and South East England."
+      heroDescription="Comprehensive event security services for gatherings of all sizes. From corporate functions to music festivals, our SIA-licensed guards ensure your event runs safely and smoothly across Hertfordshire, Bedfordshire, North London, and Central London."
       description="Successful events require meticulous security planning and professional execution. Our event security service covers everything from small private parties to large-scale public events, providing crowd management, access control, and emergency response. Our experienced team includes event security specialists who understand the unique challenges of protecting guests while maintaining a positive atmosphere. We work closely with event organizers, venues, and local authorities to ensure compliance and safety."
       benefits={[
         'Experienced event security specialists',
@@ -32,7 +32,6 @@ export default function EventSecurityPage() {
         'We manage all aspects of access control, from ticket verification to VIP accreditation. Our guards conduct bag checks and security screenings efficiently while maintaining a welcoming atmosphere for guests.',
         'Throughout the event, our control team monitors the situation, coordinating guard deployments and responding to any incidents. We maintain close communication with event organizers, venue staff, and emergency services.',
       ]}
-      pricingFrom="From £17 per hour per guard"
       faqs={[
         {
           question: 'How many security guards do I need for my event?',
@@ -56,7 +55,7 @@ export default function EventSecurityPage() {
         },
       ]}
       relatedServices={[
-        { name: 'Door Supervisors', href: '/services/door-supervisors' },
+        { name: 'Film TV & Theatre Security', href: '/services/film-tv-theatre-security' },
         { name: 'Close Protection Security', href: '/services/close-protection-security' },
         { name: 'Traffic Marshals', href: '/services/traffic-marshals' },
       ]}
