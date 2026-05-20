@@ -18,22 +18,24 @@ export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState('');
 
+  const encode = (data: Record<string, string>) =>
+    Object.keys(data)
+      .map(k => encodeURIComponent(k) + '=' + encodeURIComponent(data[k]))
+      .join('&');
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     setError('');
 
     try {
-      const response = await fetch('/api/contact', {
+      const response = await fetch('/', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encode({ 'form-name': 'contact', ...formData }),
       });
 
-      if (!response.ok) {
-        throw new Error('Failed to send message');
-      }
-
+      if (!response.ok) throw new Error();
       setSubmitted(true);
     } catch {
       setError('Failed to send message. Please try again or call us directly.');
@@ -94,7 +96,10 @@ export default function ContactPage() {
                   </button>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-4">
+                <form name="contact" onSubmit={handleSubmit} className="space-y-4" data-netlify="true" netlify-honeypot="bot-field">
+                  <input type="hidden" name="form-name" value="contact" />
+                  <input type="hidden" name="subject" value="New enquiry — ASK Security website" />
+                  <p className="hidden"><input name="bot-field" /></p>
                   {error && (
                     <div className="bg-red-50 border border-red-200 rounded-lg p-4 text-red-700 text-sm">
                       {error}
