@@ -110,7 +110,7 @@ export default function RootLayout({
                 { "@type": "AdministrativeArea", "name": "South East England" }
               ],
               "description": "Professional 24/7 security guard services across London and South East England. SIA-licensed security personnel for corporate, retail, event, and personal protection.",
-              "sameAs": ["https://www.facebook.com/asksecurity"]
+              "sameAs": ["https://www.facebook.com/profile.php?id=61576186452339", "https://www.instagram.com/asksecurityltd/"]
             }),
           }}
         />
