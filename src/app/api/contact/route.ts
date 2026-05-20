@@ -27,7 +27,7 @@ export async function POST(request: Request) {
     // Send email to ASK Security
     await resend.emails.send({
       from: 'ASK Security Website <noreply@asksecurity.co.uk>',
-      to: ['contact@asksecurity.co.uk'],
+      to: (process.env.CONTACT_EMAILS ?? '').split(',').map(e => e.trim()).filter(Boolean),
       replyTo: email,
       subject: `New Contact Form Submission${service ? ` - ${service}` : ''}`,
       html: `
