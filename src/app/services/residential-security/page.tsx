@@ -59,6 +59,7 @@ export default function ResidentialSecurityPage() {
         { name: 'Mobile Patrols', href: '/services/mobile-patrols' },
         { name: 'Close Protection Security', href: '/services/close-protection-security' },
       ]}
+      heroImage="/images/Residential-Security-Guards.jpg"
     />
   );
 }

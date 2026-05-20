@@ -59,6 +59,7 @@ export default function TrafficMarshalsPage() {
         { name: 'Construction Site Security', href: '/services/construction-site-security' },
         { name: 'Film TV & Theatre Security', href: '/services/film-tv-theatre-security' },
       ]}
+      heroImage="/images/ask-haulage.jpg"
     />
   );
 }

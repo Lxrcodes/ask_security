@@ -1,7 +1,22 @@
 import type { Metadata } from "next";
+import { Oswald, Source_Sans_3 } from 'next/font/google';
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+
+const oswald = Oswald({
+  subsets: ['latin'],
+  weight: ['600', '700'],
+  variable: '--font-oswald',
+  display: 'swap',
+});
+
+const sourceSans3 = Source_Sans_3({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-source-sans',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: {
@@ -74,9 +89,9 @@ export default function RootLayout({
               "priceRange": "££",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "3rd Floor, 86-90 Paul Street",
-                "addressLocality": "London",
-                "postalCode": "EC2A 4NE",
+                "streetAddress": "169 Watling Street",
+                "addressLocality": "Radlett",
+                "postalCode": "WD7 7NQ",
                 "addressCountry": "GB"
               },
               "geo": {
@@ -100,12 +115,12 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="antialiased min-h-screen flex flex-col">
+      <body className={`${oswald.variable} ${sourceSans3.variable} antialiased min-h-screen flex flex-col`}>
         <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-[#FF8C00] text-white px-4 py-2 z-50">
           Skip to main content
         </a>
         <Header />
-        <main id="main-content" className="flex-grow">
+        <main id="main-content" className="flex-grow pt-20 bg-black">
           {children}
         </main>
         <Footer />

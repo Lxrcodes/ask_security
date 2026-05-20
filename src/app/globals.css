@@ -1,56 +1,52 @@
 @import "tailwindcss";
 
+/* ── Design tokens ── */
 :root {
-  --background: #ffffff;
-  --foreground: #333333;
-  --primary: #000000;
-  --accent: #FF8C00;
-  --accent-hover: #E67E00;
-  --light-gray: #F5F5F5;
-  --text-muted: #666666;
+  --ink:        #14110e;
+  --ink-2:      #1f1b16;
+  --accent:     #e8821e;
+  --accent-dk:  #c96c12;
+  --paper:      #ffffff;
+  --paper-2:    #f7f5f2;
+  --muted:      #8a8175;
+  --muted-d:    #a8a096;
+  --line:       #ece7df;
+  --line-d:     #2c2620;
 }
 
+/* Expose tokens as Tailwind utilities: bg-ink, text-accent, border-line, etc. */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-primary: var(--primary);
-  --color-accent: var(--accent);
-  --color-accent-hover: var(--accent-hover);
-  --color-light-gray: var(--light-gray);
-  --color-text-muted: var(--text-muted);
-  --font-sans: Arial, Helvetica, sans-serif;
+  --color-ink:       var(--ink);
+  --color-ink-2:     var(--ink-2);
+  --color-accent:    var(--accent);
+  --color-accent-dk: var(--accent-dk);
+  --color-paper-2:   var(--paper-2);
+  --color-muted:     var(--muted);
+  --color-muted-d:   var(--muted-d);
+  --color-line:      var(--line);
+  --color-line-d:    var(--line-d);
+
+  --font-sans:    var(--font-source-sans), 'Source Sans 3', Arial, Helvetica, sans-serif;
+  --font-display: var(--font-oswald), 'Oswald', sans-serif;
+}
+
+html {
+  background: var(--ink);
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Custom utility classes */
-.btn-primary {
-  @apply bg-[#FF8C00] text-white px-8 py-4 rounded font-semibold text-lg transition-colors hover:bg-[#E67E00] inline-flex items-center justify-center;
-}
-
-.btn-secondary {
-  @apply border-2 border-black bg-transparent text-black px-8 py-4 rounded font-semibold text-lg transition-colors hover:bg-black hover:text-white inline-flex items-center justify-center;
-}
-
-.section-padding {
-  @apply py-20 px-4 md:py-24 lg:py-28;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
 }
 
 .container-custom {
   @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
 }
 
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Focus styles for accessibility */
 a:focus-visible,
 button:focus-visible {
-  @apply outline-2 outline-offset-2 outline-[#FF8C00];
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }

@@ -59,6 +59,7 @@ export default function EventSecurityPage() {
         { name: 'Close Protection Security', href: '/services/close-protection-security' },
         { name: 'Traffic Marshals', href: '/services/traffic-marshals' },
       ]}
+      heroImage="/images/night-club-security.png"
     />
   );
 }

@@ -27,25 +27,25 @@ const serviceAreas = [
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white">
+    <footer className="bg-ink text-white">
       <div className="container-custom py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
             <div className="mb-4">
               <span className="text-2xl font-bold text-white">ASK</span>
-              <span className="text-2xl font-bold text-[#FF8C00] ml-1">Security</span>
+              <span className="text-2xl font-bold text-[#e8821e] ml-1">Security</span>
             </div>
-            <p className="text-gray-400 mb-4">
+            <p className="text-muted-d mb-4">
               Professional 24/7 security guard services across Hertfordshire, Bedfordshire, North London, and Central London.
               SIA-licensed, fully insured, and trusted by businesses since 2004.
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://www.facebook.com/asksecurity"
+                href="https://www.facebook.com/profile.php?id=61576186452339"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-[#FF8C00]"
+                className="text-muted-d hover:text-[#e8821e]"
                 aria-label="Facebook"
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -63,7 +63,7 @@ export default function Footer() {
                 <li key={service.name}>
                   <Link
                     href={service.href}
-                    className="text-gray-400 hover:text-[#FF8C00] transition-colors"
+                    className="text-muted-d hover:text-[#e8821e] transition-colors"
                   >
                     {service.name}
                   </Link>
@@ -80,7 +80,7 @@ export default function Footer() {
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-gray-400 hover:text-[#FF8C00] transition-colors"
+                    className="text-muted-d hover:text-[#e8821e] transition-colors"
                   >
                     {item.name}
                   </Link>
@@ -92,37 +92,32 @@ export default function Footer() {
           {/* Contact & Service Areas */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
-            <div className="space-y-3 text-gray-400">
-              <p>
-                <strong className="text-white">Address:</strong><br />
-                3rd Floor, 86-90 Paul Street<br />
-                London, EC2A 4NE
-              </p>
+            <div className="space-y-3 text-muted-d">
               <p>
                 <strong className="text-white">Phone:</strong><br />
-                <a href="tel:+447476058050" className="hover:text-[#FF8C00]">
+                <a href="tel:+447476058050" className="hover:text-[#e8821e]">
                   +44 7476 058050
                 </a>
               </p>
               <p>
                 <strong className="text-white">Email:</strong><br />
-                <a href="mailto:contact@asksecurity.co.uk" className="hover:text-[#FF8C00]">
+                <a href="mailto:contact@asksecurity.co.uk" className="hover:text-[#e8821e]">
                   contact@asksecurity.co.uk
                 </a>
               </p>
-              <p className="text-[#FF8C00] font-semibold">Available 24/7</p>
+              <p className="text-[#e8821e] font-semibold">Available 24/7</p>
             </div>
           </div>
         </div>
 
         {/* Service Areas */}
-        <div className="mt-12 pt-8 border-t border-gray-800">
+        <div className="mt-12 pt-8 border-t border-line-d">
           <h3 className="text-lg font-semibold mb-4">Service Areas</h3>
           <div className="flex flex-wrap gap-2">
             {serviceAreas.map((area) => (
               <span
                 key={area}
-                className="bg-gray-800 text-gray-400 px-3 py-1 rounded text-sm"
+                className="bg-ink-2 text-muted-d px-3 py-1 rounded text-sm"
               >
                 {area}
               </span>
@@ -131,17 +126,17 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-gray-800">
-          <div className="flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
+        <div className="mt-12 pt-8 border-t border-line-d">
+          <div className="flex flex-col md:flex-row justify-between items-center text-muted-d text-sm">
             <div className="mb-4 md:mb-0">
               <p>Ask Prime Security Ltd | Company #16436890</p>
               <p>&copy; {new Date().getFullYear()} ASK Security London. All rights reserved.</p>
             </div>
             <div className="flex space-x-6">
-              <Link href="/privacy-policy" className="hover:text-[#FF8C00]">
+              <Link href="/privacy-policy" className="hover:text-[#e8821e]">
                 Privacy Policy
               </Link>
-              <Link href="/terms" className="hover:text-[#FF8C00]">
+              <Link href="/terms" className="hover:text-[#e8821e]">
                 Terms of Service
               </Link>
             </div>

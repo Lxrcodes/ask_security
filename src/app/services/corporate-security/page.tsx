@@ -59,6 +59,7 @@ export default function CorporateSecurityPage() {
         { name: 'Hotel Security', href: '/services/hotel-security' },
         { name: 'Close Protection Security', href: '/services/close-protection-security' },
       ]}
+      heroImage="/images/office-security.jpg"
     />
   );
 }

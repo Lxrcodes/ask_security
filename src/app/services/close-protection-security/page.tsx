@@ -59,6 +59,7 @@ export default function CloseProtectionSecurityPage() {
         { name: 'Corporate Security', href: '/services/corporate-security' },
         { name: 'Event Security', href: '/services/event-security' },
       ]}
+      heroImage="/images/vip-security.jpg"
     />
   );
 }

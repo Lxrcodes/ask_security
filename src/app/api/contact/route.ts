@@ -57,7 +57,7 @@ export async function POST(request: Request) {
         <p>${message.replace(/\n/g, '<br />')}</p>
         <hr />
         <p>Best regards,<br />ASK Security Team</p>
-        <p>3rd Floor, 86-90 Paul Street, London, EC2A 4NE</p>
+        <p>169 Watling Street, Radlett, England, WD7 7NQ</p>
       `,
     });
 

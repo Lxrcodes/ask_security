@@ -59,6 +59,7 @@ export default function HotelSecurityPage() {
         { name: 'Event Security', href: '/services/event-security' },
         { name: 'Close Protection Security', href: '/services/close-protection-security' },
       ]}
+      heroImage="/images/ask-residential-2.jpg"
     />
   );
 }

@@ -59,6 +59,7 @@ export default function FilmTVTheatreSecurityPage() {
         { name: 'Close Protection Security', href: '/services/close-protection-security' },
         { name: 'Traffic Marshals', href: '/services/traffic-marshals' },
       ]}
+      heroImage="/images/FQhirm7Q-1920x1280-1.webp"
     />
   );
 }

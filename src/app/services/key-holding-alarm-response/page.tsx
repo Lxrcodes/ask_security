@@ -59,6 +59,7 @@ export default function KeyHoldingAlarmResponsePage() {
         { name: 'Vacant Property Security', href: '/services/vacant-property-security' },
         { name: 'Corporate Security', href: '/services/corporate-security' },
       ]}
+      heroImage="/images/key-holding.jpg"
     />
   );
 }

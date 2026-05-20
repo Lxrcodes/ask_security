@@ -10,13 +10,13 @@ export default function PrivacyPolicyPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-black text-white py-10 md:py-16">
+      <section className="bg-ink text-white py-10 md:py-16">
         <div className="container-custom">
           <nav className="mb-4" aria-label="Breadcrumb">
             <ol className="flex items-center space-x-2 text-xs md:text-sm text-gray-400">
               <li><Link href="/" className="hover:text-white">Home</Link></li>
               <li><span>/</span></li>
-              <li className="text-[#FF8C00]">Privacy Policy</li>
+              <li className="text-[#e8821e]">Privacy Policy</li>
             </ol>
           </nav>
           <h1 className="text-2xl md:text-4xl font-bold">Privacy Policy</h1>
@@ -58,7 +58,7 @@ export default function PrivacyPolicyPage() {
 
             <h2 className="text-lg md:text-2xl font-bold text-black mt-6 mb-3">Contact Us</h2>
             <p className="text-gray-700 text-sm md:text-base">
-              Ask Prime Security Ltd, 3rd Floor, 86-90 Paul Street, London, EC2A 4NE<br />
+              Ask Prime Security Ltd, 169 Watling Street, Radlett, England, WD7 7NQ<br />
               Email: contact@asksecurity.co.uk | Phone: +44 7476 058050
             </p>
           </div>

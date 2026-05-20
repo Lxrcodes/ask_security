@@ -59,6 +59,7 @@ export default function PrivateInvestigationPage() {
         { name: 'Corporate Security', href: '/services/corporate-security' },
         { name: 'Residential Security', href: '/services/residential-security' },
       ]}
+      heroImage="/images/car-road.JPG"
     />
   );
 }

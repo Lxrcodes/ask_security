@@ -107,24 +107,24 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-black text-white py-10 md:py-20">
+      <section className="bg-ink text-white py-10 md:py-20">
         <div className="container-custom">
           <nav className="mb-4" aria-label="Breadcrumb">
             <ol className="flex items-center space-x-2 text-xs md:text-sm text-gray-400">
               <li><Link href="/" className="hover:text-white">Home</Link></li>
               <li><span>/</span></li>
-              <li className="text-[#FF8C00]">Services</li>
+              <li className="text-[#e8821e]">Services</li>
             </ol>
           </nav>
           <div className="max-w-3xl">
-            <h1 className="text-2xl md:text-4xl font-bold mb-3 md:mb-6">
+            <h1 className="text-2xl md:text-4xl font-bold mb-3 md:mb-6 font-display uppercase tracking-wide">
               Our Security Services
             </h1>
             <p className="text-base md:text-xl text-gray-300 mb-4 md:mb-8">
               Comprehensive security solutions for properties, businesses, events, and personal protection.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
-              <a href="tel:+447476058050" className="bg-[#FF8C00] text-white py-3 px-6 rounded font-semibold hover:bg-[#E67E00] transition-colors text-center">
+              <a href="tel:+447476058050" className="bg-[#e8821e] text-white py-3 px-6 rounded font-semibold hover:bg-[#c96c12] transition-colors text-center">
                 Call 24/7
               </a>
               <Link href="/contact" className="bg-white text-black py-3 px-6 rounded font-semibold hover:bg-gray-100 transition-colors text-center">
@@ -139,11 +139,11 @@ export default function ServicesPage() {
       {serviceCategories.map((category, index) => (
         <section
           key={category.title}
-          className={`py-8 md:py-16 ${index % 2 === 0 ? 'bg-white' : 'bg-[#F5F5F5]'}`}
+          className={`py-8 md:py-16 ${index % 2 === 0 ? 'bg-white' : 'bg-paper-2'}`}
         >
           <div className="container-custom">
             <div className="mb-6 md:mb-10">
-              <h2 className="text-xl md:text-3xl font-bold text-black mb-2">{category.title}</h2>
+              <h2 className="text-xl md:text-3xl font-bold text-black mb-2 font-display uppercase tracking-wide">{category.title}</h2>
               <p className="text-sm md:text-lg text-gray-600">{category.description}</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
@@ -151,13 +151,13 @@ export default function ServicesPage() {
                 <Link
                   key={service.name}
                   href={service.href}
-                  className="bg-white border border-gray-200 rounded-lg p-4 md:p-6 hover:shadow-lg hover:border-[#FF8C00] transition-all group"
+                  className="bg-white border border-line rounded-lg p-4 md:p-6 hover:shadow-lg hover:border-[#e8821e] transition-all group"
                 >
-                  <h3 className="text-base md:text-xl font-bold text-black mb-1 md:mb-2 group-hover:text-[#FF8C00] transition-colors">
+                  <h3 className="text-base md:text-xl font-bold text-black mb-1 md:mb-2 group-hover:text-[#e8821e] transition-colors font-display">
                     {service.name}
                   </h3>
                   <p className="text-sm text-gray-600 mb-2 md:mb-4">{service.description}</p>
-                  <span className="text-[#FF8C00] font-medium inline-flex items-center text-sm">
+                  <span className="text-[#e8821e] font-medium inline-flex items-center text-sm">
                     Learn More →
                   </span>
                 </Link>
@@ -168,9 +168,9 @@ export default function ServicesPage() {
       ))}
 
       {/* Why Choose Us */}
-      <section className="py-8 md:py-16 bg-black text-white">
+      <section className="py-8 md:py-16 bg-ink text-white">
         <div className="container-custom">
-          <h2 className="text-xl md:text-3xl font-bold mb-6 text-center">Why Choose ASK Security</h2>
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-center font-display uppercase tracking-wide">Why Choose ASK Security</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
               { title: 'SIA Licensed', description: 'Fully licensed & DBS checked' },
@@ -179,8 +179,8 @@ export default function ServicesPage() {
               { title: 'Fully Insured', description: '£10M liability' },
             ].map((item) => (
               <div key={item.title} className="text-center">
-                <h3 className="font-bold text-base md:text-lg text-[#FF8C00] mb-1">{item.title}</h3>
-                <p className="text-gray-400 text-xs md:text-sm">{item.description}</p>
+                <h3 className="font-bold text-base md:text-lg text-[#e8821e] mb-1 font-display">{item.title}</h3>
+                <p className="text-muted-d text-xs md:text-sm">{item.description}</p>
               </div>
             ))}
           </div>
@@ -188,19 +188,19 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-10 md:py-16 bg-[#F5F5F5]">
+      <section className="py-10 md:py-16 bg-paper-2">
         <div className="container-custom text-center">
-          <h2 className="text-xl md:text-3xl font-bold text-black mb-3">
+          <h2 className="text-xl md:text-3xl font-bold text-black mb-3 font-display uppercase tracking-wide">
             Need a Custom Security Solution?
           </h2>
           <p className="text-sm md:text-base text-gray-600 mb-6 max-w-2xl mx-auto">
             Contact us today to discuss your specific requirements.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <a href="tel:+447476058050" className="bg-[#FF8C00] text-white py-3 px-6 rounded font-semibold hover:bg-[#E67E00] transition-colors">
+            <a href="tel:+447476058050" className="bg-[#e8821e] text-white py-3 px-6 rounded font-semibold hover:bg-[#c96c12] transition-colors">
               Call Now
             </a>
-            <Link href="/contact" className="bg-black text-white py-3 px-6 rounded font-semibold hover:bg-gray-800 transition-colors">
+            <Link href="/contact" className="bg-ink text-white py-3 px-6 rounded font-semibold hover:bg-ink-2 transition-colors">
               Request Quote
             </Link>
           </div>

@@ -22,17 +22,17 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-black text-white py-10 md:py-20">
+      <section className="bg-ink text-white py-10 md:py-20">
         <div className="container-custom">
           <nav className="mb-4" aria-label="Breadcrumb">
             <ol className="flex items-center space-x-2 text-xs md:text-sm text-gray-400">
               <li><Link href="/" className="hover:text-white">Home</Link></li>
               <li><span>/</span></li>
-              <li className="text-[#FF8C00]">About Us</li>
+              <li className="text-[#e8821e]">About Us</li>
             </ol>
           </nav>
           <div className="max-w-3xl">
-            <h1 className="text-2xl md:text-4xl font-bold mb-3">
+            <h1 className="text-2xl md:text-4xl font-bold mb-3 font-display uppercase tracking-wide">
               About ASK Security
             </h1>
             <p className="text-base md:text-xl text-gray-300">
@@ -46,7 +46,7 @@ export default function AboutPage() {
       <section className="py-8 md:py-16 bg-white">
         <div className="container-custom">
           <div className="max-w-4xl">
-            <h2 className="text-xl md:text-3xl font-bold text-black mb-4">Our Story</h2>
+            <h2 className="text-xl md:text-3xl font-bold text-black mb-4 font-display uppercase tracking-wide">Our Story</h2>
             <div className="space-y-3 text-sm md:text-base text-gray-700">
               <p>
                 ASK Security was founded to provide professional, reliable security services that businesses and individuals can trust. With over two decades protecting London and the South East, we&apos;ve grown into one of the region&apos;s most respected providers.
@@ -60,11 +60,11 @@ export default function AboutPage() {
       </section>
 
       {/* Our Team */}
-      <section className="py-8 md:py-16 bg-[#F5F5F5]">
+      <section className="py-8 md:py-16 bg-paper-2">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-12 items-center">
             <div>
-              <h2 className="text-xl md:text-3xl font-bold text-black mb-3">Ex-Police & Ex-Military</h2>
+              <h2 className="text-xl md:text-3xl font-bold text-black mb-3 font-display uppercase tracking-wide">Ex-Police & Ex-Military</h2>
               <div className="space-y-3 text-sm md:text-base text-gray-700">
                 <p>
                   Our team is drawn from demanding backgrounds—police, military, and specialist security services—bringing invaluable experience to every assignment.
@@ -74,12 +74,12 @@ export default function AboutPage() {
                 </p>
               </div>
             </div>
-            <div className="bg-black text-white rounded-lg p-4 md:p-6">
+            <div className="bg-ink text-white rounded-lg p-4 md:p-6">
               <h3 className="font-bold mb-3 md:mb-4">Our Standards</h3>
               <ul className="space-y-2 text-sm">
                 {['SIA-licensed & DBS-checked', 'Regular training', 'First aid trained', 'Conflict resolution', 'Customer service excellence'].map((item) => (
                   <li key={item} className="flex items-center">
-                    <svg className="w-4 h-4 text-[#FF8C00] mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 text-[#e8821e] mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     <span>{item}</span>
@@ -94,10 +94,10 @@ export default function AboutPage() {
       {/* Certifications */}
       <section className="py-8 md:py-16 bg-white">
         <div className="container-custom">
-          <h2 className="text-xl md:text-3xl font-bold text-black mb-6 text-center">Certifications</h2>
+          <h2 className="text-xl md:text-3xl font-bold text-black mb-6 text-center font-display uppercase tracking-wide">Certifications</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6">
             {certifications.map((cert) => (
-              <div key={cert.name} className="bg-[#F5F5F5] rounded-lg p-4 text-center">
+              <div key={cert.name} className="bg-paper-2 rounded-lg p-4 text-center">
                 <h3 className="font-bold text-black text-sm md:text-base mb-1">{cert.name}</h3>
                 <p className="text-gray-600 text-xs md:text-sm">{cert.description}</p>
               </div>
@@ -107,9 +107,9 @@ export default function AboutPage() {
       </section>
 
       {/* Coverage Areas */}
-      <section className="py-8 md:py-16 bg-[#F5F5F5]">
+      <section className="py-8 md:py-16 bg-paper-2">
         <div className="container-custom">
-          <h2 className="text-xl md:text-3xl font-bold text-black mb-4 text-center">Coverage Areas</h2>
+          <h2 className="text-xl md:text-3xl font-bold text-black mb-4 text-center font-display uppercase tracking-wide">Coverage Areas</h2>
           <div className="flex flex-wrap justify-center gap-2">
             {coverageAreas.map((area) => (
               <span key={area} className="bg-white text-gray-700 px-3 py-1 rounded-full text-xs md:text-sm border border-gray-200">
@@ -118,7 +118,7 @@ export default function AboutPage() {
             ))}
           </div>
           <div className="text-center mt-4">
-            <Link href="/coverage-areas" className="text-[#FF8C00] font-medium hover:underline text-sm">
+            <Link href="/coverage-areas" className="text-[#e8821e] font-medium hover:underline text-sm">
               View Full Coverage →
             </Link>
           </div>
@@ -129,9 +129,9 @@ export default function AboutPage() {
       <section className="py-8 md:py-16 bg-white">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-xl md:text-3xl font-bold text-black mb-6 text-center">Company Information</h2>
+            <h2 className="text-xl md:text-3xl font-bold text-black mb-6 text-center font-display uppercase tracking-wide">Company Information</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="bg-[#F5F5F5] rounded-lg p-4">
+              <div className="bg-paper-2 rounded-lg p-4">
                 <h3 className="font-bold text-black mb-2 text-sm md:text-base">Legal Details</h3>
                 <dl className="space-y-1 text-sm text-gray-700">
                   <div><dt className="text-xs text-gray-500">Trading Name</dt><dd>ASK Security London</dd></div>
@@ -139,11 +139,11 @@ export default function AboutPage() {
                   <div><dt className="text-xs text-gray-500">Company Number</dt><dd>16436890</dd></div>
                 </dl>
               </div>
-              <div className="bg-[#F5F5F5] rounded-lg p-4">
+              <div className="bg-paper-2 rounded-lg p-4">
                 <h3 className="font-bold text-black mb-2 text-sm md:text-base">Registered Address</h3>
                 <address className="text-sm text-gray-700 not-italic">
-                  3rd Floor, 86-90 Paul Street<br />
-                  London, EC2A 4NE
+                  169 Watling Street<br />
+                  Radlett, England, WD7 7NQ
                 </address>
               </div>
             </div>
@@ -152,14 +152,14 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-10 md:py-16 bg-black text-white">
+      <section className="py-10 md:py-16 bg-ink text-white">
         <div className="container-custom text-center">
-          <h2 className="text-xl md:text-3xl font-bold mb-3">Ready to Work With Us?</h2>
+          <h2 className="text-xl md:text-3xl font-bold mb-3 font-display uppercase tracking-wide">Ready to Work With Us?</h2>
           <p className="text-sm md:text-base text-gray-300 mb-6">
             Free consultations and no-obligation quotes.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <a href="tel:+447476058050" className="bg-[#FF8C00] text-white py-3 px-6 rounded font-semibold hover:bg-[#E67E00] transition-colors">
+            <a href="tel:+447476058050" className="bg-[#e8821e] text-white py-3 px-6 rounded font-semibold hover:bg-[#c96c12] transition-colors">
               Call Now
             </a>
             <Link href="/contact" className="bg-white text-black py-3 px-6 rounded font-semibold hover:bg-gray-100 transition-colors">

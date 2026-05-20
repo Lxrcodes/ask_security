@@ -59,6 +59,7 @@ export default function ConciergeSecurityPage() {
         { name: 'Hotel Security', href: '/services/hotel-security' },
         { name: 'Close Protection Security', href: '/services/close-protection-security' },
       ]}
+      heroImage="/images/ask-residential.jpg"
     />
   );
 }
