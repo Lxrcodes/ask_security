@@ -17,7 +17,7 @@ const coverageAreas = [
   },
   {
     region: 'Hertfordshire',
-    areas: ['Watford', 'St Albans', 'Hemel Hempstead', 'Stevenage'],
+    areas: ['Watford', 'St Albans', 'Hemel Hempstead', 'Stevenage', 'Radlett'],
   },
   {
     region: 'Bedfordshire',

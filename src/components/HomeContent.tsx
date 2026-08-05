@@ -31,7 +31,7 @@ function Counter({ target, suffix = '' }: { target: number; suffix?: string }) {
 }
 
 const serviceNames = [
-  'Corporate Security', 'Residential Security', 'Event Security',
+  'Corporate Security', 'Residential Security', 'Car Park Security',
   'Close Protection', 'Mobile Patrols', 'Key Holding',
   'Private Investigation', 'Hotel Security', 'Construction Security',
   'Film & TV Security', 'Traffic Marshals', 'Concierge Security',
@@ -59,12 +59,12 @@ const services = [
     ),
   },
   {
-    title: 'Events',
-    description: 'Event security, film & TV, traffic marshals and crowd management.',
+    title: 'Car Park',
+    description: 'Car park security management, access control and vehicle monitoring.',
     href: '/services',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h11a2 2 0 012 2v3m-1 14H9a2 2 0 01-2-2v-3m0 0h10a2 2 0 002-2V9a2 2 0 00-2-2H9a2 2 0 00-2 2v7z" />
       </svg>
     ),
   },

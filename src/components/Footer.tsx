@@ -6,7 +6,7 @@ const services = [
   { name: 'Vacant Property Security', href: '/services/vacant-property-security' },
   { name: 'Corporate Security', href: '/services/corporate-security' },
   { name: 'Residential Security', href: '/services/residential-security' },
-  { name: 'Event Security', href: '/services/event-security' },
+  { name: 'Car Park Security Management', href: '/services' },
   { name: 'Close Protection', href: '/services/close-protection-security' },
 ];
 
