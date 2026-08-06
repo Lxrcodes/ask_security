@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Security Services',
-  description: 'Comprehensive security guard services across Hertfordshire, Bedfordshire, North London, and Central London. Property, business, event, and personal protection from SIA-licensed professionals.',
+  description: 'Comprehensive security guard services across Hertfordshire, Bedfordshire, North London, and Central London. Property, business, car park, and personal protection from SIA-licensed professionals.',
 };
 
 const serviceCategories = [
@@ -60,13 +60,13 @@ const serviceCategories = [
     ],
   },
   {
-    title: 'Event Security',
-    description: 'Expert security for events of all sizes and types',
+    title: 'Car Park & Specialist Security',
+    description: 'Specialist security services for car parks and unique environments',
     services: [
       {
-        name: 'Event Security',
-        description: 'Comprehensive security planning and personnel for any event.',
-        href: '/services/event-security',
+        name: 'Car Park Security Management',
+        description: 'Professional car park security, access control, and vehicle monitoring.',
+        href: '/services/car-park-security',
       },
       {
         name: 'Film TV & Theatre Security',
@@ -121,7 +121,7 @@ export default function ServicesPage() {
               Our Security Services
             </h1>
             <p className="text-base md:text-xl text-gray-300 mb-4 md:mb-8">
-              Comprehensive security solutions for properties, businesses, events, and personal protection.
+              Comprehensive security solutions for properties, businesses, car parks, and personal protection.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <a href="tel:+447476058050" className="bg-[#e8821e] text-white py-3 px-6 rounded font-semibold hover:bg-[#c96c12] transition-colors text-center">
