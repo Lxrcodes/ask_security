@@ -33,8 +33,40 @@ const fadeUp = {
 export default function LocationPageTemplate({
   region, intro, overview, areas, responseTime, services, highlights, faqs,
 }: LocationPageTemplateProps) {
+  const slug = region.toLowerCase().replace(/\s+/g, '-');
+
+  const localBusinessSchema = {
+    '@context': 'https://schema.org',
+    '@type': ['LocalBusiness', 'ProfessionalService'],
+    '@id': `https://asksecurity.co.uk/coverage-areas/${slug}#business`,
+    'name': `ASK Security — ${region}`,
+    'url': `https://asksecurity.co.uk/coverage-areas/${slug}`,
+    'telephone': '+447476058050',
+    'description': `Professional SIA-licensed security guard services in ${region}. 24/7 cover with ${responseTime} average response time.`,
+    'areaServed': areas.map(area => ({ '@type': 'City', 'name': area })),
+    'parentOrganization': {
+      '@type': 'LocalBusiness',
+      '@id': 'https://asksecurity.co.uk/#business',
+    },
+  };
+
+  const faqSchema = faqs.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': faqs.map(faq => ({
+      '@type': 'Question',
+      'name': faq.question,
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': faq.answer,
+      },
+    })),
+  } : null;
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+      {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
       {/* Hero */}
       <section className="bg-ink text-white py-16 md:py-24">
         <div className="container-custom">

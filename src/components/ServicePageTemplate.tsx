@@ -38,8 +38,42 @@ export default function ServicePageTemplate({
   relatedServices,
   heroImage,
 }: ServicePageProps) {
+  const serviceSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    '@id': `https://asksecurity.co.uk/services#${title.toLowerCase().replace(/\s+/g, '-')}`,
+    'name': title,
+    'description': description,
+    'provider': {
+      '@type': 'LocalBusiness',
+      '@id': 'https://asksecurity.co.uk/#business',
+      'name': 'ASK Security',
+    },
+    'areaServed': [
+      { '@type': 'City', 'name': 'London' },
+      { '@type': 'AdministrativeArea', 'name': 'Hertfordshire' },
+      { '@type': 'AdministrativeArea', 'name': 'Bedfordshire' },
+    ],
+    'url': 'https://asksecurity.co.uk/services',
+  };
+
+  const faqSchema = faqs.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': faqs.map(faq => ({
+      '@type': 'Question',
+      'name': faq.question,
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': faq.answer,
+      },
+    })),
+  } : null;
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
       {/* Hero */}
       <section className="relative bg-ink text-white py-16 md:py-28 overflow-hidden">
         {heroImage ? (

@@ -79,10 +79,12 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "SecurityService",
-              "name": "ASK Security London",
-              "alternateName": "Ask Prime Security Ltd",
+              "@type": ["LocalBusiness", "ProfessionalService"],
+              "@id": "https://asksecurity.co.uk/#business",
+              "name": "ASK Security",
+              "legalName": "Ask Prime Security Ltd",
               "url": "https://asksecurity.co.uk",
+              "logo": "https://asksecurity.co.uk/images/ask-security-logo.png",
               "telephone": "+447476058050",
               "email": "contact@asksecurity.co.uk",
               "priceRange": "££",
@@ -90,13 +92,14 @@ export default function RootLayout({
                 "@type": "PostalAddress",
                 "streetAddress": "169 Watling Street",
                 "addressLocality": "Radlett",
+                "addressRegion": "Hertfordshire",
                 "postalCode": "WD7 7NQ",
                 "addressCountry": "GB"
               },
               "geo": {
                 "@type": "GeoCoordinates",
-                "latitude": "51.5255",
-                "longitude": "-0.0863"
+                "latitude": "51.6877",
+                "longitude": "-0.3225"
               },
               "openingHoursSpecification": {
                 "@type": "OpeningHoursSpecification",
@@ -106,10 +109,14 @@ export default function RootLayout({
               },
               "areaServed": [
                 { "@type": "City", "name": "London" },
-                { "@type": "AdministrativeArea", "name": "South East England" }
+                { "@type": "AdministrativeArea", "name": "Hertfordshire" },
+                { "@type": "AdministrativeArea", "name": "Bedfordshire" }
               ],
-              "description": "Professional 24/7 security guard services across London and South East England. SIA-licensed security personnel for corporate, retail, event, and personal protection.",
-              "sameAs": ["https://www.facebook.com/profile.php?id=61576186452339", "https://www.instagram.com/asksecurityltd/"]
+              "description": "Professional 24/7 SIA-licensed security guard services across London, Hertfordshire and Bedfordshire. Ex-police and ex-military security professionals.",
+              "sameAs": [
+                "https://www.facebook.com/profile.php?id=61576186452339",
+                "https://www.instagram.com/asksecurityltd/"
+              ]
             }),
           }}
         />
