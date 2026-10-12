@@ -419,6 +419,60 @@ export default function ServicePageTemplate({
         </div>
       </section>
 
+      {/* Coverage Areas */}
+      <section className="py-12 md:py-16 bg-paper-2">
+        <div className="container-custom">
+          <motion.div
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: '-80px' }}
+            transition={{ duration: 0.6 }}
+            className="mb-6"
+          >
+            <span className="text-[#e8821e] font-semibold text-xs uppercase tracking-widest mb-3 block">Where We Operate</span>
+            <h2 className="font-display text-2xl md:text-3xl font-bold text-black uppercase tracking-wide">Coverage Areas</h2>
+          </motion.div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            {[
+              { region: 'Central London', href: '/coverage-areas/central-london', time: '15–20 min' },
+              { region: 'North London',   href: '/coverage-areas/north-london',   time: '20–30 min' },
+              { region: 'Hertfordshire',  href: '/coverage-areas/hertfordshire',  time: '30–45 min' },
+              { region: 'Bedfordshire',   href: '/coverage-areas/bedfordshire',   time: '30–45 min' },
+            ].map((area, i) => (
+              <motion.div
+                key={area.region}
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: i * 0.07 }}
+              >
+                <Link
+                  href={area.href}
+                  className="group bg-white rounded-xl p-4 md:p-5 block border border-line hover:border-[#e8821e] hover:shadow-md transition-all"
+                >
+                  <div className="font-display font-bold text-black text-sm md:text-base mb-1 group-hover:text-[#e8821e] transition-colors">{area.region}</div>
+                  <div className="text-gray-500 text-xs">{area.time} response</div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+          <motion.div
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="mt-5"
+          >
+            <Link href="/coverage-areas" className="text-[#e8821e] text-sm font-semibold hover:underline">
+              View all coverage areas →
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section className="py-16 md:py-24 bg-ink text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-[0.03]"

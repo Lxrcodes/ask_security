@@ -272,6 +272,56 @@ export default function HomeContent() {
         </div>
       </section>
 
+      {/* ── COVERAGE AREAS ── light */}
+      <section className="bg-paper-2 py-10 md:py-16 border-y border-line">
+        <div className="container-custom">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-60px' }}
+            transition={{ duration: 0.6 }}
+            className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-7"
+          >
+            <div>
+              <span className="text-[#e8821e] font-semibold text-xs uppercase tracking-widest mb-3 block">Where We Work</span>
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-black tracking-wide uppercase">Coverage Areas</h2>
+            </div>
+            <Link href="/coverage-areas" className="text-[#e8821e] text-sm font-semibold hover:underline shrink-0">
+              View all coverage areas →
+            </Link>
+          </motion.div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+            {[
+              { region: 'Central London', href: '/coverage-areas/central-london', time: '15–20 min', areas: 'City · Westminster · Kensington' },
+              { region: 'North London',   href: '/coverage-areas/north-london',   time: '20–30 min', areas: 'Harrow · Enfield · Barnet' },
+              { region: 'Hertfordshire',  href: '/coverage-areas/hertfordshire',  time: '30–45 min', areas: 'Watford · St Albans · Radlett' },
+              { region: 'Bedfordshire',   href: '/coverage-areas/bedfordshire',   time: '30–45 min', areas: 'Bedford · Luton · Dunstable' },
+            ].map((area, i) => (
+              <motion.div
+                key={area.region}
+                initial={{ opacity: 0, y: 25 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: '-40px' }}
+                transition={{ duration: 0.5, delay: i * 0.08 }}
+              >
+                <Link
+                  href={area.href}
+                  className="group bg-white rounded-xl p-4 md:p-5 flex flex-col gap-1 border border-line hover:border-[#e8821e] hover:shadow-lg hover:-translate-y-1 transition-all duration-300 h-full"
+                >
+                  <div className="font-display font-bold text-black text-sm md:text-base group-hover:text-[#e8821e] transition-colors">{area.region}</div>
+                  <div className="text-gray-500 text-xs leading-relaxed">{area.areas}</div>
+                  <div className="mt-auto pt-3 flex items-center justify-between">
+                    <span className="text-[#e8821e] text-xs font-semibold">{area.time}</span>
+                    <span className="text-gray-400 text-xs group-hover:text-[#e8821e] transition-colors">→</span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── WHY US ── dark */}
       <section className="bg-ink py-16 md:py-20">
         <div className="container-custom">
