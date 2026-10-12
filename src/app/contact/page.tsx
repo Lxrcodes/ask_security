@@ -126,7 +126,7 @@ export default function ContactPage() {
                       <input
                         type="tel" id="phone" name="phone" value={formData.phone} onChange={handleChange}
                         className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e8821e] focus:border-transparent outline-none text-sm"
-                        placeholder="+44 7000 000000"
+                        placeholder="+44 7476 058050"
                       />
                     </div>
                     <div>
