@@ -59,7 +59,6 @@ export default function ConstructionSiteSecurityPage() {
         { name: 'Mobile Patrols', href: '/services/mobile-patrols' },
         { name: 'Traffic Marshals', href: '/services/traffic-marshals' },
       ]}
-      heroImage="/images/construction-site-security.jpg"
     />
   );
 }

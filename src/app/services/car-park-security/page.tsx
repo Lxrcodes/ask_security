@@ -59,7 +59,7 @@ export default function CarParkSecurityPage() {
         { name: 'Corporate Security', href: '/services/corporate-security' },
         { name: 'Traffic Marshals', href: '/services/traffic-marshals' },
       ]}
-      heroImage="/images/retail-security-services.webp"
+      heroImage="/images/ASK Security Car.jpeg"
     />
   );
 }
