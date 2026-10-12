@@ -36,7 +36,7 @@ const faqCategories = [
     category: 'Insurance & Compliance',
     faqs: [
       { question: 'Are you properly insured?', answer: 'Yes, we carry £10M public liability, employer\'s liability, and professional indemnity insurance.' },
-      { question: 'What certifications do you hold?', answer: 'We are SIA Approved Contractors, ACT certified, and our key holding is BS7984 compliant.' },
+      { question: 'What certifications do you hold?', answer: 'We are SIA Qualified Contractors, ACT certified, and our key holding is BS7984 compliant.' },
     ],
   },
 ];

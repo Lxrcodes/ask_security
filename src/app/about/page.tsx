@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 };
 
 const certifications = [
-  { name: 'SIA Approved', description: 'Approved by the Security Industry Authority' },
+  { name: 'SIA Qualified', description: 'Qualified by the Security Industry Authority' },
   { name: 'ACT Certified', description: 'Action Counters Terrorism certified' },
   { name: 'BS7984 Compliant', description: 'British Standard for key holding' },
   { name: 'Fully Insured', description: '£10M public liability insurance' },
