@@ -2,14 +2,14 @@ import type { Metadata } from 'next';
 import ServicePageTemplate from '@/components/ServicePageTemplate';
 
 export const metadata: Metadata = {
-  title: 'Residential Security Services | Home & Estate Security',
+  title: 'Residential Security Services London | Home & Estate Security',
   description: 'Professional residential security services across Hertfordshire, Bedfordshire, North London, and Central London. SIA-licensed guards for homes, estates, and gated communities.',
 };
 
 export default function ResidentialSecurityPage() {
   return (
     <ServicePageTemplate
-      title="Residential Security"
+      title="Residential Security London"
       heroDescription="Professional security services for homes, residential estates, and gated communities across Hertfordshire, Bedfordshire, North London, and Central London. Protecting your family and property with discreet, expert security."
       description="Your home should be your safest place. Our residential security service provides tailored protection for private homes, luxury residences, gated estates, and residential developments. SIA-licensed guards deliver discreet, professional security that protects your family and property without disrupting your lifestyle. Whether you need a permanent security presence, regular patrols, or enhanced protection for specific periods, we provide a solution that fits your needs."
       benefits={[

@@ -24,7 +24,6 @@ export const metadata: Metadata = {
     template: "%s | ASK Security London",
   },
   description: "Professional 24/7 security guard services across London & South East. SIA-licensed guards for car parks, corporate, retail & residential. Get a free quote: +44 7476 058050",
-  keywords: ["security guards London", "security services London", "SIA security guards", "car park security London", "corporate security", "retail security", "close protection"],
   authors: [{ name: "ASK Security London" }],
   creator: "ASK Security London",
   publisher: "Ask Prime Security Ltd",

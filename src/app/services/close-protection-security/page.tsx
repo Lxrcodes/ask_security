@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function CloseProtectionSecurityPage() {
   return (
     <ServicePageTemplate
-      title="Close Protection Security"
+      title="Close Protection Security London"
       heroDescription="Professional close protection and bodyguard services for executives, celebrities, high-net-worth individuals, and anyone requiring personal security across London and internationally."
       description="Our close protection service provides discreet, professional personal security for individuals who face elevated security risks. Our close protection officers (CPOs) are highly trained specialists, many with backgrounds in military special forces, police protection units, or government security services. They provide comprehensive protection including threat assessment, secure transportation, residence security, and personal accompaniment, ensuring client safety while maintaining privacy and minimizing disruption to daily life."
       benefits={[

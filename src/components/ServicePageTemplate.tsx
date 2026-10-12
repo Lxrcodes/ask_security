@@ -88,7 +88,7 @@ export default function ServicePageTemplate({
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
-              className="font-display text-3xl md:text-5xl font-bold mb-4 uppercase tracking-wide"
+              className="font-display text-3xl md:text-5xl font-bold text-white mb-4 uppercase tracking-wide"
             >
               {title}
             </motion.h1>
@@ -224,8 +224,8 @@ export default function ServicePageTemplate({
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="font-display font-bold text-lg mb-2 uppercase tracking-wide">Need Immediate Security?</h3>
-              <p className="text-muted-d text-sm mb-6">24/7 emergency deployment available across our coverage areas.</p>
+              <h3 className="font-display font-bold text-white text-lg mb-2 uppercase tracking-wide">Need Immediate Security?</h3>
+              <p className="text-gray-300 text-sm mb-6">24/7 emergency deployment available across our coverage areas.</p>
               <a
                 href="tel:+447476058050"
                 className="bg-[#e8821e] text-white py-3 px-6 rounded font-semibold hover:bg-[#c96c12] transition-all block text-center hover:-translate-y-0.5 hover:shadow-lg hover:shadow-[#e8821e]/25"
@@ -289,8 +289,8 @@ export default function ServicePageTemplate({
               <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 <div>
                   <span className="text-[#e8821e] font-semibold text-xs uppercase tracking-widest mb-3 block">Pricing</span>
-                  <h2 className="font-display text-2xl md:text-3xl font-bold mb-2 uppercase tracking-wide">Competitive Pricing</h2>
-                  <p className="text-muted-d text-sm">Tailored quotes based on your specific requirements. No hidden fees.</p>
+                  <h2 className="font-display text-2xl md:text-3xl font-bold text-white mb-2 uppercase tracking-wide">Competitive Pricing</h2>
+                  <p className="text-gray-300 text-sm">Tailored quotes based on your specific requirements. No hidden fees.</p>
                 </div>
                 <div className="text-center md:text-right">
                   <Link
@@ -399,8 +399,8 @@ export default function ServicePageTemplate({
             transition={{ duration: 0.7 }}
           >
             <span className="text-[#e8821e] font-semibold text-xs uppercase tracking-widest mb-4 block">Get Started</span>
-            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4 uppercase tracking-wide">Ready to discuss your needs?</h2>
-            <p className="text-muted-d mb-10 max-w-lg mx-auto">Free consultation and no-obligation quote within 24 hours.</p>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-white mb-4 uppercase tracking-wide">Ready to discuss your needs?</h2>
+            <p className="text-gray-300 mb-10 max-w-lg mx-auto">Free consultation and no-obligation quote within 24 hours.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="tel:+447476058050"

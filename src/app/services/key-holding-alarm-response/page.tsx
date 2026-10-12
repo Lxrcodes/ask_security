@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function KeyHoldingAlarmResponsePage() {
   return (
     <ServicePageTemplate
-      title="Key Holding & Alarm Response"
+      title="Key Holding & Alarm Response London"
       heroDescription="Professional 24/7 key holding and rapid alarm response services for commercial and residential properties across Hertfordshire, Bedfordshire, North London, and Central London."
       description="Our key holding and alarm response service provides peace of mind for property owners and managers. When your alarm is triggered, our SIA-licensed security guards respond immediately, investigating the cause and taking appropriate action. We hold your keys securely, eliminating the need for you or your staff to respond to out-of-hours incidents. Our service is fully compliant with BS7984, the British Standard for key holding and response services."
       benefits={[

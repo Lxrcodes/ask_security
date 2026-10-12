@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function HotelSecurityPage() {
   return (
     <ServicePageTemplate
-      title="Hotel Security"
+      title="Hotel Security London"
       heroDescription="Discreet, professional security services for hotels and hospitality venues across London. Protect your guests, staff, and reputation with SIA-licensed security that enhances the guest experience."
       description="Hotels present unique security challenges, balancing the need for robust protection with the imperative to provide excellent guest experiences. Our hotel security officers understand this balance, providing professional security that is welcoming to guests while remaining vigilant against threats. From luxury boutique hotels to large conference venues, we provide tailored security solutions including lobby and entrance security, floor patrols, event security, and VIP protection."
       benefits={[

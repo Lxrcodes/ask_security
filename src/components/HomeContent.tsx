@@ -163,7 +163,7 @@ export default function HomeContent() {
             transition={{ duration: 0.6, delay: 0.75 }}
             className="text-lg md:text-xl text-gray-300 mb-10 max-w-lg"
           >
-            24/7 protection from ex-police and ex-military professionals across Hertfordshire, Bedfordshire, and London.
+            SIA-licensed security guard services across London, Hertfordshire and Bedfordshire. 24/7 cover from ex-police and ex-military professionals.
           </motion.p>
 
           <motion.div
@@ -300,7 +300,7 @@ export default function HomeContent() {
                   {item.icon}
                 </div>
                 <h3 className="font-display font-bold text-white text-xl tracking-wide mb-3">{item.title}</h3>
-                <p className="text-muted-d text-sm leading-relaxed">{item.description}</p>
+                <p className="text-gray-300 text-sm leading-relaxed">{item.description}</p>
               </motion.div>
             ))}
           </div>
@@ -443,7 +443,7 @@ export default function HomeContent() {
                   <div className="text-6xl md:text-7xl font-bold text-[#e8821e] mb-3 tabular-nums">
                     <Counter target={stat.value} suffix={stat.suffix} />
                   </div>
-                  <div className="text-muted-d text-sm uppercase tracking-widest">{stat.label}</div>
+                  <div className="text-gray-300 text-sm uppercase tracking-widest">{stat.label}</div>
                 </motion.div>
               ))}
             </div>
@@ -461,8 +461,8 @@ export default function HomeContent() {
               transition={{ duration: 0.7 }}
             >
               <span className="text-[#e8821e] font-semibold text-xs uppercase tracking-widest mb-4 block">Get Started</span>
-              <h2 className="font-display text-3xl md:text-5xl font-bold mb-4 tracking-wide uppercase">Ready to Secure What Matters?</h2>
-              <p className="text-muted-d mb-10 text-base md:text-lg max-w-xl mx-auto">
+              <h2 className="font-display text-3xl md:text-5xl font-bold text-white mb-4 tracking-wide uppercase">Ready to Secure What Matters?</h2>
+              <p className="text-gray-300 mb-10 text-base md:text-lg max-w-xl mx-auto">
                 Free consultation · No obligation quote · 24/7 available
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">

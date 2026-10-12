@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function IndustrialSecurityPage() {
   return (
     <ServicePageTemplate
-      title="Industrial Security"
+      title="Industrial Security London"
       heroDescription="Comprehensive security solutions for warehouses, factories, distribution centres, and industrial facilities across Hertfordshire, Bedfordshire, North London, and Central London. Protect your operations, assets, and personnel."
       description="Industrial facilities present unique security challenges, from protecting high-value stock and equipment to managing multiple access points and large site perimeters. Our industrial security service provides robust protection tailored to manufacturing, logistics, and distribution environments. SIA-licensed guards control access, conduct patrols, and monitor security systems, ensuring your operations run safely and securely around the clock. We understand industrial environments and work within your operational requirements."
       benefits={[

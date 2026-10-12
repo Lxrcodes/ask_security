@@ -2,14 +2,14 @@ import type { Metadata } from 'next';
 import ServicePageTemplate from '@/components/ServicePageTemplate';
 
 export const metadata: Metadata = {
-  title: 'Vacant Property Security London | Empty Building Protection',
+  title: 'Vacant Property Security London',
   description: 'Professional vacant property security in London & South East. Protect unoccupied buildings from squatters, vandalism & theft. SIA-licensed guards 24/7.',
 };
 
 export default function VacantPropertySecurityPage() {
   return (
     <ServicePageTemplate
-      title="Vacant Property Security"
+      title="Vacant Property Security London"
       heroDescription="Comprehensive security solutions for vacant, unoccupied, and empty properties. Protect your investment from squatters, vandals, and thieves across Hertfordshire, Bedfordshire, North London, and Central London."
       description="Vacant properties are prime targets for squatters, vandals, metal thieves, and arsonists. Our vacant property security service provides the protection your empty building needs. Whether you have a property awaiting sale, undergoing renovation, or between tenants, we offer tailored security solutions including static guards, mobile patrols, and remote monitoring to safeguard your investment and maintain its value."
       benefits={[

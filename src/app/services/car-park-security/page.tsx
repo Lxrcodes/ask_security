@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function CarParkSecurityPage() {
   return (
     <ServicePageTemplate
-      title="Car Park Security Management"
+      title="Car Park Security Management London"
       heroDescription="Professional car park security management services across Hertfordshire, Bedfordshire, North London, and Central London. Our SIA-licensed guards provide access control, vehicle monitoring, and a visible deterrent to protect your car park and its users."
       description="Effective car park security requires a proactive approach that balances access management with a safe and welcoming environment for users. Our car park security service covers everything from small private car parks to large multi-storey facilities, providing uniformed guards, patrol services, and access control management. Our experienced team deters anti-social behaviour, prevents unauthorised access, monitors CCTV, and responds swiftly to incidents. We work with property managers, retailers, hospitals, and local authorities to deliver tailored solutions that keep vehicles and people safe."
       benefits={[

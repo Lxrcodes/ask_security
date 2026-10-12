@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function ConciergeSecurityPage() {
   return (
     <ServicePageTemplate
-      title="Concierge Security"
+      title="Concierge Security London"
       heroDescription="Premium front-of-house security with exceptional customer service for residential buildings, corporate offices, and luxury venues across London."
       description="Concierge security combines professional security services with high-end customer service, creating a welcoming first impression while maintaining robust protection. Our concierge security officers are selected for their exceptional interpersonal skills, professional appearance, and security expertise. They manage reception areas, control access, assist visitors, and handle deliveries, all while remaining vigilant against security threats. Ideal for luxury residential buildings, premium office spaces, and high-end venues."
       benefits={[

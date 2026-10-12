@@ -36,7 +36,7 @@ export default function Footer() {
               <span className="text-2xl font-bold text-white">ASK</span>
               <span className="text-2xl font-bold text-[#e8821e] ml-1">Security</span>
             </div>
-            <p className="text-muted-d mb-4">
+            <p className="text-gray-300 mb-4">
               Professional 24/7 security guard services across Hertfordshire, Bedfordshire, North London, and Central London.
               SIA-licensed, fully insured, and trusted by businesses since 2004.
             </p>
@@ -45,7 +45,7 @@ export default function Footer() {
                 href="https://www.facebook.com/profile.php?id=61576186452339"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-d hover:text-[#e8821e] transition-colors"
+                className="text-gray-300 hover:text-[#e8821e] transition-colors"
                 aria-label="Facebook"
               >
                 <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
@@ -56,7 +56,7 @@ export default function Footer() {
                 href="https://www.instagram.com/asksecurityltd/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-d hover:text-[#e8821e] transition-colors"
+                className="text-gray-300 hover:text-[#e8821e] transition-colors"
                 aria-label="Instagram"
               >
                 <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
@@ -74,7 +74,7 @@ export default function Footer() {
                 <li key={service.name}>
                   <Link
                     href={service.href}
-                    className="text-muted-d hover:text-[#e8821e] transition-colors"
+                    className="text-gray-300 hover:text-[#e8821e] transition-colors"
                   >
                     {service.name}
                   </Link>
@@ -91,7 +91,7 @@ export default function Footer() {
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-muted-d hover:text-[#e8821e] transition-colors"
+                    className="text-gray-300 hover:text-[#e8821e] transition-colors"
                   >
                     {item.name}
                   </Link>
@@ -103,7 +103,7 @@ export default function Footer() {
           {/* Contact & Service Areas */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
-            <div className="space-y-3 text-muted-d">
+            <div className="space-y-3 text-gray-300">
               <p>
                 <strong className="text-white">Phone:</strong><br />
                 <a href="tel:+447476058050" className="hover:text-[#e8821e]">
@@ -128,7 +128,7 @@ export default function Footer() {
             {serviceAreas.map((area) => (
               <span
                 key={area}
-                className="bg-ink-2 text-muted-d px-3 py-1 rounded text-sm"
+                className="bg-ink-2 text-gray-300 px-3 py-1 rounded text-sm"
               >
                 {area}
               </span>
@@ -138,7 +138,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-line-d">
-          <div className="flex flex-col md:flex-row justify-between items-center text-muted-d text-sm">
+          <div className="flex flex-col md:flex-row justify-between items-center text-gray-300 text-sm">
             <div className="mb-4 md:mb-0">
               <p>Ask Prime Security Ltd | Company #16436890</p>
               <p>&copy; {new Date().getFullYear()} ASK Security London. All rights reserved.</p>

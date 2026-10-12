@@ -2,14 +2,14 @@ import type { Metadata } from 'next';
 import ServicePageTemplate from '@/components/ServicePageTemplate';
 
 export const metadata: Metadata = {
-  title: 'Private Investigation Services | Discreet Investigations',
+  title: 'Private Investigation Services London | Discreet Investigations',
   description: 'Professional private investigation services across Hertfordshire, Bedfordshire, North London, and Central London. Discreet, lawful investigations for individuals and businesses.',
 };
 
 export default function PrivateInvestigationPage() {
   return (
     <ServicePageTemplate
-      title="Private Investigation"
+      title="Private Investigation London"
       heroDescription="Discreet, professional private investigation services for individuals and businesses across Hertfordshire, Bedfordshire, North London, and Central London. Expert investigators delivering results you can trust."
       description="Our private investigation service provides discreet, professional, and lawful investigations for a wide range of personal and commercial needs. From infidelity investigations and missing persons to corporate fraud and employee misconduct, our experienced investigators gather evidence using legal methods, providing detailed reports suitable for personal or legal use. All investigations are conducted in full compliance with UK law, ensuring any evidence gathered is admissible and reliable."
       benefits={[

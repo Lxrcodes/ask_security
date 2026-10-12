@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function TrafficMarshalsPage() {
   return (
     <ServicePageTemplate
-      title="Traffic Marshals"
+      title="Traffic Marshals London"
       heroDescription="Professional traffic management services for events, construction sites, and film locations across London. Our qualified traffic marshals ensure safe, efficient vehicle movement and pedestrian safety."
       description="Effective traffic management is essential for safety at construction sites, events, and location shoots. Our traffic marshals are trained and qualified to manage vehicle movements, control access, and maintain pedestrian safety. They coordinate with contractors, event organizers, and local authorities to implement traffic management plans, reducing congestion and ensuring compliance with safety requirements. From single-site banksman services to complex event traffic management, we provide professional solutions."
       benefits={[

@@ -15,16 +15,16 @@
 }
 
 /* Expose tokens as Tailwind utilities: bg-ink, text-accent, border-line, etc. */
-@theme inline {
-  --color-ink:       var(--ink);
-  --color-ink-2:     var(--ink-2);
-  --color-accent:    var(--accent);
-  --color-accent-dk: var(--accent-dk);
-  --color-paper-2:   var(--paper-2);
-  --color-muted:     var(--muted);
-  --color-muted-d:   var(--muted-d);
-  --color-line:      var(--line);
-  --color-line-d:    var(--line-d);
+@theme {
+  --color-ink:       #14110e;
+  --color-ink-2:     #1f1b16;
+  --color-accent:    #e8821e;
+  --color-accent-dk: #c96c12;
+  --color-paper-2:   #f7f5f2;
+  --color-muted:     #8a8175;
+  --color-muted-d:   #a8a096;
+  --color-line:      #ece7df;
+  --color-line-d:    #2c2620;
 
   --font-sans:    var(--font-source-sans), 'Source Sans 3', Arial, Helvetica, sans-serif;
   --font-display: var(--font-oswald), 'Oswald', sans-serif;

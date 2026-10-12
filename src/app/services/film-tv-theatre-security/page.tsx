@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function FilmTVTheatreSecurityPage() {
   return (
     <ServicePageTemplate
-      title="Film TV & Theatre Security"
+      title="Film TV & Theatre Security London"
       heroDescription="Specialist security services for film productions, television shoots, and theatre venues across London. Protect your equipment, locations, and talent with guards who understand the entertainment industry."
       description="Film and television productions involve significant investment in equipment, props, and sets, often in exposed locations. Our specialist production security team understands the unique requirements of the entertainment industry, providing protection that supports rather than disrupts creative work. We offer location security, unit base protection, crowd control for public shoots, and talent protection, all delivered by guards experienced in working on production sets."
       benefits={[

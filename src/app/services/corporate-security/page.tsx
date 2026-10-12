@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function CorporateSecurityPage() {
   return (
     <ServicePageTemplate
-      title="Corporate Security"
+      title="Corporate Security London"
       heroDescription="Professional security solutions for corporate offices, business headquarters, and commercial premises across Hertfordshire, Bedfordshire, North London, and Central London. Protect your people, assets, and reputation."
       description="Our corporate security service provides comprehensive protection for businesses of all sizes. From front-of-house reception security to comprehensive access control and emergency response, our SIA-licensed guards deliver professional security that enhances your corporate image while keeping your premises, employees, and visitors safe. We understand that corporate security requires discretion, professionalism, and exceptional customer service skills."
       benefits={[

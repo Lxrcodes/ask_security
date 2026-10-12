@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function MobilePatrolsPage() {
   return (
     <ServicePageTemplate
-      title="Mobile Patrols"
+      title="Mobile Security Patrols London"
       heroDescription="Regular mobile security patrols to deter crime, detect issues early, and provide visible security presence across your properties in Hertfordshire, Bedfordshire, North London, and Central London."
       description="Our mobile patrol service provides cost-effective security coverage for single or multiple sites. SIA-licensed security officers conduct regular patrols in marked vehicles, checking your premises at scheduled or random intervals. This visible security presence acts as a powerful deterrent while ensuring any issues are identified and addressed promptly. Mobile patrols are ideal for businesses that need flexible security coverage without the cost of static guards."
       benefits={[

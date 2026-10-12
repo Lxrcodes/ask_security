@@ -2,7 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Security Services',
+  title: 'Security Guard Services London',
   description: 'Comprehensive security guard services across Hertfordshire, Bedfordshire, North London, and Central London. Property, business, car park, and personal protection from SIA-licensed professionals.',
 };
 
@@ -170,7 +170,7 @@ export default function ServicesPage() {
       {/* Why Choose Us */}
       <section className="py-8 md:py-16 bg-ink text-white">
         <div className="container-custom">
-          <h2 className="text-xl md:text-3xl font-bold mb-6 text-center font-display uppercase tracking-wide">Why Choose ASK Security</h2>
+          <h2 className="text-xl md:text-3xl font-bold text-white mb-6 text-center font-display uppercase tracking-wide">Why Choose ASK Security</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
               { title: 'SIA Licensed', description: 'Fully licensed & DBS checked' },
@@ -180,7 +180,7 @@ export default function ServicesPage() {
             ].map((item) => (
               <div key={item.title} className="text-center">
                 <h3 className="font-bold text-base md:text-lg text-[#e8821e] mb-1 font-display">{item.title}</h3>
-                <p className="text-muted-d text-xs md:text-sm">{item.description}</p>
+                <p className="text-gray-300 text-xs md:text-sm">{item.description}</p>
               </div>
             ))}
           </div>
