@@ -43,11 +43,20 @@ export const metadata: Metadata = {
     siteName: "ASK Security London",
     locale: "en_GB",
     type: "website",
+    images: [
+      {
+        url: "/images/car-castle.JPG",
+        width: 2048,
+        height: 1637,
+        alt: "Professional security guard services in London and South East",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "24/7 Security Guard Services London & South East | ASK Security",
     description: "Professional 24/7 security guard services across London & South East. SIA-licensed guards.",
+    images: ["/images/car-castle.JPG"],
   },
   robots: {
     index: true,
