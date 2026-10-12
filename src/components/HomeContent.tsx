@@ -122,19 +122,15 @@ export default function HomeContent() {
     <>
       {/* ── HERO ── */}
       <section className="relative bg-ink overflow-hidden pt-12 pb-20 md:pt-24 md:pb-28">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-          style={{ filter: 'saturate(0.5) brightness(0.75)' }}
-          poster="/images/car-castle.jpg"
-        >
-          <source src="/images/hero-video.mp4" type="video/mp4" />
-        </video>
-        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-black/10" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/15 to-transparent" />
+        <Image
+          src="/images/car-castle.jpg"
+          alt="Professional security guard services in London"
+          fill
+          className="object-cover md:object-[center_90%] saturate-[0.55] brightness-[0.85]"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/65 to-black/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent" />
 
         <div className="container-custom relative z-10">
           <motion.div
@@ -358,6 +354,40 @@ export default function HomeContent() {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ── VIDEO ── dark */}
+      <section className="bg-ink-2 py-14 md:py-20 border-t border-line-d">
+        <div className="container-custom">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-80px' }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-8"
+          >
+            <span className="text-[#e8821e] font-semibold text-xs uppercase tracking-widest mb-3 block">In Action</span>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-white tracking-wide uppercase">See Our Guards in Action</h2>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-60px' }}
+            transition={{ duration: 0.7, delay: 0.1 }}
+            className="max-w-3xl mx-auto"
+          >
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-black/50 border border-line-d">
+              <video
+                controls
+                playsInline
+                className="w-full aspect-video"
+                poster="/images/car-castle.jpg"
+              >
+                <source src="/images/hero-video.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </motion.div>
         </div>
       </section>
 
