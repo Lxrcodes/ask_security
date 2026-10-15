@@ -59,6 +59,28 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Video */}
+      <section className="py-10 md:py-16 bg-ink-2">
+        <div className="container-custom">
+          <div className="text-center mb-8">
+            <span className="text-[#e8821e] font-semibold text-xs uppercase tracking-widest mb-3 block">ASK Security</span>
+            <h2 className="text-xl md:text-3xl font-bold text-white font-display uppercase tracking-wide">Your Property in Safe Hands</h2>
+          </div>
+          <div className="max-w-3xl mx-auto">
+            <div className="rounded-2xl overflow-hidden shadow-2xl shadow-black/50 border border-line-d">
+              <video
+                controls
+                playsInline
+                className="w-full aspect-video"
+                poster="/images/car-castle.jpg"
+              >
+                <source src="/images/hero-video.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Our Team */}
       <section className="py-8 md:py-16 bg-paper-2">
         <div className="container-custom">
