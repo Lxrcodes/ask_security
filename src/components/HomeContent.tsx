@@ -357,40 +357,6 @@ export default function HomeContent() {
         </div>
       </section>
 
-      {/* ── VIDEO ── dark */}
-      <section className="bg-ink-2 py-14 md:py-20 border-t border-line-d">
-        <div className="container-custom">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-80px' }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-8"
-          >
-            <span className="text-[#e8821e] font-semibold text-xs uppercase tracking-widest mb-3 block">In Action</span>
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-white tracking-wide uppercase">See Our Guards in Action</h2>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-60px' }}
-            transition={{ duration: 0.7, delay: 0.1 }}
-            className="max-w-3xl mx-auto"
-          >
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-black/50 border border-line-d">
-              <video
-                controls
-                playsInline
-                className="w-full aspect-video"
-                poster="/images/car-castle.jpg"
-              >
-                <source src="/images/hero-video.mp4" type="video/mp4" />
-              </video>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
       {/* ── CERTIFICATIONS + TESTIMONIAL ── white, bleeds into dark stats */}
       <div className="bg-white relative">
 
@@ -500,6 +466,40 @@ export default function HomeContent() {
           </svg>
         </div>
       </div>
+
+      {/* ── VIDEO ── dark */}
+      <section className="bg-ink-2 py-14 md:py-20 border-t border-line-d">
+        <div className="container-custom">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-80px' }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-8"
+          >
+            <span className="text-[#e8821e] font-semibold text-xs uppercase tracking-widest mb-3 block">Who We Are</span>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-white tracking-wide uppercase">About ASK Security</h2>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-60px' }}
+            transition={{ duration: 0.7, delay: 0.1 }}
+            className="max-w-3xl mx-auto"
+          >
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-black/50 border border-line-d">
+              <video
+                controls
+                playsInline
+                className="w-full aspect-video"
+                poster="/images/car-castle.jpg"
+              >
+                <source src="/images/hero-video.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </motion.div>
+        </div>
+      </section>
 
       {/* ── STATS + CTA ── dark */}
       <div className="bg-ink text-white relative overflow-hidden">
