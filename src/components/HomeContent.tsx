@@ -8,13 +8,15 @@ import { useRef, useEffect, useState } from 'react';
 function Counter({ target, suffix = '' }: { target: number; suffix?: string }) {
   const ref = useRef<HTMLSpanElement>(null);
   const isInView = useInView(ref, { once: true });
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(target); // SSR-safe: renders final value
 
   useEffect(() => {
     if (!isInView) return;
+    // Parent is opacity-0 when this fires, so the reset to 0 is invisible
+    let current = 0;
+    setCount(0);
     const steps = 60;
     const increment = target / steps;
-    let current = 0;
     const timer = setInterval(() => {
       current += increment;
       if (current >= target) {
@@ -23,7 +25,7 @@ function Counter({ target, suffix = '' }: { target: number; suffix?: string }) {
       } else {
         setCount(Math.floor(current));
       }
-    }, 2000 / steps);
+    }, 1800 / steps);
     return () => clearInterval(timer);
   }, [isInView, target]);
 
@@ -508,9 +510,9 @@ export default function HomeContent() {
           <div className="container-custom">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-white/10">
               {[
-                { label: 'Years Experience', value: 20, suffix: '+' },
-                { label: 'Clients Protected', value: 500, suffix: '+' },
-                { label: 'Hour Response', value: 24, suffix: '/7' },
+                { label: 'Years Experience', value: 20, suffix: '+', static: false },
+                { label: 'Clients Protected', value: 500, suffix: '+', static: false },
+                { label: 'Hour Response', value: null, display: '24/7', static: true },
               ].map((stat, i) => (
                 <motion.div
                   key={stat.label}
@@ -521,7 +523,10 @@ export default function HomeContent() {
                   className="py-8 md:py-0"
                 >
                   <div className="text-6xl md:text-7xl font-bold text-[#e8821e] mb-3 tabular-nums">
-                    <Counter target={stat.value} suffix={stat.suffix} />
+                    {stat.static
+                      ? stat.display
+                      : <Counter target={stat.value!} suffix={stat.suffix} />
+                    }
                   </div>
                   <div className="text-gray-300 text-sm uppercase tracking-widest">{stat.label}</div>
                 </motion.div>
