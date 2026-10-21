@@ -83,7 +83,7 @@ const services = [
 ];
 
 const certifications = [
-  { name: 'SIA Qualified', image: '/images/sia.jpg' },
+  { name: 'SIA Qualified', image: '/images/SIA Licensed.jpeg' },
   { name: 'ACT Certified', image: '/images/ACTAwarenessTrainedLogo.jpg' },
   { name: 'Safe Contractor', image: '/images/safeContractorApprovedLogo.jpg' },
   { name: 'Fully Trained', image: '/images/fullyTrainedLogo.jpg' },
