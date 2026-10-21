@@ -59,7 +59,7 @@ export default function MobilePatrolsPage() {
         { name: 'Vacant Property Security', href: '/services/vacant-property-security' },
         { name: 'Construction Site Security', href: '/services/construction-site-security' },
       ]}
-      heroImage="/images/night-patrol.jpg"
+      heroImage="/images/car driving away.jpeg"
     />
   );
 }
