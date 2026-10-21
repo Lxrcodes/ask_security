@@ -93,7 +93,7 @@ export default function RootLayout({
               "name": "ASK Security",
               "legalName": "Ask Prime Security Ltd",
               "url": "https://asksecurity.co.uk",
-              "logo": "https://asksecurity.co.uk/images/ask-security-logo.png",
+              "logo": "https://asksecurity.co.uk/images/ask-logo-white.svg",
               "telephone": "+447476058050",
               "email": "contact@asksecurity.co.uk",
               "priceRange": "££",

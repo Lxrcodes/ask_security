@@ -35,6 +35,13 @@ export default function LocationPageTemplate({
 }: LocationPageTemplateProps) {
   const slug = region.toLowerCase().replace(/\s+/g, '-');
 
+  const geoCoords: Record<string, { latitude: string; longitude: string }> = {
+    'central-london':  { latitude: '51.5074',  longitude: '-0.1278' },
+    'north-london':    { latitude: '51.5855',  longitude: '-0.1288' },
+    'hertfordshire':   { latitude: '51.8098',  longitude: '-0.2376' },
+    'bedfordshire':    { latitude: '52.1350',  longitude: '-0.4670' },
+  };
+
   const localBusinessSchema = {
     '@context': 'https://schema.org',
     '@type': ['LocalBusiness', 'ProfessionalService'],
@@ -43,6 +50,7 @@ export default function LocationPageTemplate({
     'url': `https://asksecurity.co.uk/coverage-areas/${slug}`,
     'telephone': '+447476058050',
     'description': `Professional SIA-licensed security guard services in ${region}. 24/7 cover with ${responseTime} average response time.`,
+    ...(geoCoords[slug] && { 'geo': { '@type': 'GeoCoordinates', ...geoCoords[slug] } }),
     'areaServed': areas.map(area => ({ '@type': 'City', 'name': area })),
     'parentOrganization': {
       '@type': 'LocalBusiness',
