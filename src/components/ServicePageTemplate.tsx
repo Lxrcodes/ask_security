@@ -20,6 +20,7 @@ interface ServicePageProps {
   relatedServices: { name: string; href: string }[];
   pricingFrom?: string;
   heroImage?: string;
+  heroImagePosition?: string;
 }
 
 const fadeUp = {
@@ -37,6 +38,7 @@ export default function ServicePageTemplate({
   faqs,
   relatedServices,
   heroImage,
+  heroImagePosition = 'center',
 }: ServicePageProps) {
   const serviceSchema = {
     '@context': 'https://schema.org',
@@ -83,6 +85,7 @@ export default function ServicePageTemplate({
               alt={title}
               fill
               className="object-cover saturate-[0.55] brightness-[0.85]"
+              style={{ objectPosition: heroImagePosition }}
               priority
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/65 to-black/20" />

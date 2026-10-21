@@ -60,6 +60,7 @@ export default function ResidentialSecurityPage() {
         { name: 'Close Protection Security', href: '/services/close-protection-security' },
       ]}
       heroImage="/images/car security walk in front.jpeg"
+      heroImagePosition="center 80%"
     />
   );
 }

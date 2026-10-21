@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -107,8 +108,18 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-ink text-white py-10 md:py-20">
-        <div className="container-custom">
+      <section className="relative bg-ink text-white py-10 md:py-20 overflow-hidden">
+        <Image
+          src="/images/car front right.jpeg"
+          alt="ASK Security patrol car at client property"
+          fill
+          className="object-cover saturate-[0.45] brightness-[0.8]"
+          style={{ objectPosition: 'center 55%' }}
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-black/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+        <div className="container-custom relative z-10">
           <nav className="mb-4" aria-label="Breadcrumb">
             <ol className="flex items-center space-x-2 text-xs md:text-sm text-gray-400">
               <li><Link href="/" className="hover:text-white">Home</Link></li>

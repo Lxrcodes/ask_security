@@ -59,6 +59,8 @@ export default function ConstructionSiteSecurityPage() {
         { name: 'Mobile Patrols', href: '/services/mobile-patrols' },
         { name: 'Traffic Marshals', href: '/services/traffic-marshals' },
       ]}
+      heroImage="/images/ASK Car Lorries.jpeg"
+      heroImagePosition="center 61%"
     />
   );
 }

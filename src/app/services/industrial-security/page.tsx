@@ -59,7 +59,8 @@ export default function IndustrialSecurityPage() {
         { name: 'Mobile Patrols', href: '/services/mobile-patrols' },
         { name: 'Corporate Security', href: '/services/corporate-security' },
       ]}
-      heroImage="/images/security-systems-industrial-sites-1-1110x444-1.jpg"
+      heroImage="/images/ASK Car Lorries.jpeg"
+      heroImagePosition="center 61%"
     />
   );
 }
