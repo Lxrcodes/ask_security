@@ -55,7 +55,7 @@ export default function TrafficMarshalsPage() {
         },
       ]}
       relatedServices={[
-        { name: 'Event Security', href: '/services/event-security' },
+        { name: 'Mobile Patrols', href: '/services/mobile-patrols' },
         { name: 'Construction Site Security', href: '/services/construction-site-security' },
         { name: 'Film TV & Theatre Security', href: '/services/film-tv-theatre-security' },
       ]}

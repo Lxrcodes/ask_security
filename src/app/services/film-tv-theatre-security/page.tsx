@@ -55,7 +55,7 @@ export default function FilmTVTheatreSecurityPage() {
         },
       ]}
       relatedServices={[
-        { name: 'Event Security', href: '/services/event-security' },
+        { name: 'Corporate Security', href: '/services/corporate-security' },
         { name: 'Close Protection Security', href: '/services/close-protection-security' },
         { name: 'Traffic Marshals', href: '/services/traffic-marshals' },
       ]}

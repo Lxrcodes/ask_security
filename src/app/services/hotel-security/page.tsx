@@ -56,7 +56,7 @@ export default function HotelSecurityPage() {
       ]}
       relatedServices={[
         { name: 'Concierge Security', href: '/services/concierge-security' },
-        { name: 'Event Security', href: '/services/event-security' },
+        { name: 'Corporate Security', href: '/services/corporate-security' },
         { name: 'Close Protection Security', href: '/services/close-protection-security' },
       ]}
       heroImage="/images/ask-residential-2.jpg"

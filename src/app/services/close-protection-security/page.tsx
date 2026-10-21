@@ -57,7 +57,7 @@ export default function CloseProtectionSecurityPage() {
       relatedServices={[
         { name: 'Concierge Security', href: '/services/concierge-security' },
         { name: 'Corporate Security', href: '/services/corporate-security' },
-        { name: 'Event Security', href: '/services/event-security' },
+        { name: 'Mobile Patrols', href: '/services/mobile-patrols' },
       ]}
       heroImage="/images/car security behind.jpeg"
     />

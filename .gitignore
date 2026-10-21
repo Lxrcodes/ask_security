@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# internal / large unused files
+.claude/
+public/images/My-Movie-14.mp4
+public/images/ASK Video 1.mp4
+public/images/ASK Video 2.mp4
